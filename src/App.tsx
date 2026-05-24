@@ -1,7 +1,9 @@
 import './App.css'
 import { HashRouter as Router, Routes, Route } from 'react-router-dom'
 import Header from './components/Header';
+import Footer from './components/Footer';
 import Hero from './components/Hero';
+import MetricsSection from './components/MetricsSection';
 import Problem from './components/Problem';
 import Platform from './components/Platform';
 import WhyItMatters from './components/Difference';
@@ -12,6 +14,7 @@ import ForInvestors from './pages/ForInvestors';
 const HomePage = () => (
   <main>
     <Hero />
+    <MetricsSection />
     <Problem />
     <Platform />
     <WhyItMatters />
@@ -28,6 +31,7 @@ const App = () => {
         <Route path="/farmers" element={<ForFarmers />} />
         <Route path="/investors" element={<ForInvestors />} />
       </Routes>
+      <Footer />
     </Router>
   );
 }

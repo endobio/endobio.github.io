@@ -155,7 +155,7 @@ export default function ForFarmers() {
             We're partnering with early adopter farms. Get early access to disease detection that works.
           </p>
           <a
-            href="mailto:keshav@endobio.ai"
+            href="mailto:keshav@endobio.ai?subject=Interest: Early Access (Farmer)"
             className="inline-flex items-center gap-2 rounded-lg bg-[#4caf50] px-10 py-4 font-semibold text-white hover:bg-[#45a049] transition-colors"
           >
             Request early access

@@ -194,7 +194,7 @@ export default function ForInvestors() {
             We're building the future of agricultural intelligence. If you see the opportunity, let's connect.
           </p>
           <a
-            href="mailto:keshav@endobio.ai"
+            href="mailto:keshav@endobio.ai?subject=Partnership Inquiry (Investor)"
             className="inline-flex items-center gap-2 rounded-lg bg-[#4caf50] px-10 py-4 font-semibold text-white hover:bg-[#45a049] transition-colors"
           >
             Schedule a conversation
