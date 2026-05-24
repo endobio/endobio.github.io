@@ -24,13 +24,13 @@ export default function Hero() {
           </p>
           <div className="mt-12 flex flex-col sm:flex-row items-center justify-center gap-x-6 gap-y-4">
             <a
-              href="/farmers"
+              href="/#/farmers"
               className="rounded-md bg-[#4caf50] px-8 py-3 text-sm font-semibold text-white shadow-sm hover:bg-[#45a049] transition-colors"
             >
               For Farmers
             </a>
             <a
-              href="/investors"
+              href="/#/investors"
               className="rounded-md bg-gray-100 px-8 py-3 text-sm font-semibold text-gray-900 hover:bg-gray-200 transition-colors"
             >
               For Investors
