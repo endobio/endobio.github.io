@@ -1,23 +1,34 @@
 import './App.css'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import Header from './components/Header';
 import Hero from './components/Hero';
 import Problem from './components/Problem';
 import Platform from './components/Platform';
-import Difference from './components/Difference';
-import Vision from './components/Vision';
+import WhyItMatters from './components/Difference';
+import CTA from './components/Vision';
+import ForFarmers from './pages/ForFarmers';
+import ForInvestors from './pages/ForInvestors';
+
+const HomePage = () => (
+  <main>
+    <Hero />
+    <Problem />
+    <Platform />
+    <WhyItMatters />
+    <CTA />
+  </main>
+)
 
 const App = () => {
   return (
-    <div>
+    <Router>
       <Header />
-      <main>
-        <Hero />
-        <Problem />
-        <Platform />
-        <Difference />
-        <Vision />
-      </main>
-    </div>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/farmers" element={<ForFarmers />} />
+        <Route path="/investors" element={<ForInvestors />} />
+      </Routes>
+    </Router>
   );
 }
 
