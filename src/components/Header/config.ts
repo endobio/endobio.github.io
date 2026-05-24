@@ -1,12 +1,10 @@
 import {
-  ArrowPathIcon,
-  ChartPieIcon,
-  CursorArrowRaysIcon,
-  FingerPrintIcon,
-  SquaresPlusIcon,
-  CalendarIcon,
+  BeakerIcon,
+  SparklesIcon,
+  CpuChipIcon,
+  CloudIcon,
 } from '@heroicons/react/24/outline'
-import { PhoneIcon, PlayCircleIcon } from '@heroicons/react/20/solid'
+import { EnvelopeIcon } from '@heroicons/react/20/solid'
 import { ForwardRefExoticComponent, SVGProps, RefAttributes } from 'react'
 
 type IconType = ForwardRefExoticComponent<Omit<SVGProps<SVGSVGElement>, "ref"> & { title?: string; titleId?: string; } & RefAttributes<SVGSVGElement>>
@@ -32,25 +30,44 @@ interface NavItem {
   callsToAction?: CallToAction[]
 }
 
-export const products: Product[] = [
-  { name: 'Analytics', description: 'Get a better understanding of your traffic', href: '#', icon: ChartPieIcon },
-  { name: 'Engagement', description: 'Speak directly to your customers', href: '#', icon: CursorArrowRaysIcon },
-  { name: 'Security', description: 'Your customers data will be safe and secure', href: '#', icon: FingerPrintIcon },
-  { name: 'Integrations', description: 'Connect with third-party tools', href: '#', icon: SquaresPlusIcon },
-  { name: 'Automations', description: 'Build strategic funnels that will convert', href: '#', icon: ArrowPathIcon },
+export const platformPillars: Product[] = [
+  {
+    name: 'Scientific Discovery Engine',
+    description: 'AI-powered literature mining to identify biological signals linked to crop health',
+    href: '#',
+    icon: BeakerIcon
+  },
+  {
+    name: 'Distributed Soil Intelligence',
+    description: 'Low-cost sensor networks designed for real-world agricultural deployment',
+    href: '#',
+    icon: SparklesIcon
+  },
+  {
+    name: 'Electrochemical Biosensing',
+    description: 'Scalable detection of metabolites and microbial signals directly in-field',
+    href: '#',
+    icon: CloudIcon
+  },
+  {
+    name: 'Edge AI Infrastructure',
+    description: 'Local farm intelligence for context-aware disease prediction and response',
+    href: '#',
+    icon: CpuChipIcon
+  },
 ]
 
-export const callsToAction: CallToAction[] = [
-  { name: 'Watch demo', href: '#', icon: PlayCircleIcon },
-  { name: 'Contact sales', href: '#', icon: PhoneIcon },
+export const platformCTA: CallToAction[] = [
+  { name: 'Learn more', href: '#' },
+  { name: 'View architecture', href: '#' },
 ]
 
 export const authActions: CallToAction[] = [
-  { name: 'Sign in', href: '#' },
+  { name: 'Contact us', href: 'mailto:keshav@endobio.ai', icon: EnvelopeIcon },
 ]
 
 export const primaryActions: CallToAction[] = [
-  { name: 'Schedule a demo', href: '#', icon: CalendarIcon },
+  { name: 'Get started', href: '#' },
 ]
 
 export const logo = {
@@ -61,13 +78,13 @@ export const logo = {
 
 export const mainNavItems: NavItem[] = [
   {
-    name: 'Products',
+    name: 'Platform',
     type: 'dropdown',
-    items: products,
-    callsToAction: callsToAction,
+    items: platformPillars,
+    callsToAction: platformCTA,
   },
   {
-    name: 'Solutions',
+    name: 'For Farmers',
     type: 'link',
     href: '#',
   },
@@ -77,12 +94,7 @@ export const mainNavItems: NavItem[] = [
     href: '#',
   },
   {
-    name: 'Resources',
-    type: 'link',
-    href: '#',
-  },
-  {
-    name: 'Company',
+    name: 'About',
     type: 'link',
     href: '#',
   },

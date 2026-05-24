@@ -13,12 +13,10 @@
   "dependencies": {
     "@headlessui/react": "^2.2.0",
     "@heroicons/react": "^2.2.0",
-    "@react-spring/parallax": "^9.7.5",
     "@tailwindcss/cli": "^4.0.12",
     "@tailwindcss/vite": "^4.0.12",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
-    "react-parallax": "^3.5.1",
     "tailwindcss": "^4.0.12"
   },
   "devDependencies": {
