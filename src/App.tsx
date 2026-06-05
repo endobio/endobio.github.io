@@ -6,7 +6,11 @@ import Hero from './components/Hero';
 import MetricsSection from './components/MetricsSection';
 import Problem from './components/Problem';
 import Platform from './components/Platform';
+import CurrentProgress from './components/CurrentProgress';
+import WhyNow from './components/WhyNow';
+import Roadmap from './components/Roadmap';
 import WhyItMatters from './components/Difference';
+import FounderSection from './components/FounderSection';
 import CTA from './components/Vision';
 import ForFarmers from './pages/ForFarmers';
 import ForInvestors from './pages/ForInvestors';
@@ -18,7 +22,11 @@ const HomePage = () => (
     <MetricsSection />
     <Problem />
     <Platform />
+    <CurrentProgress />
+    <WhyNow />
+    <Roadmap />
     <WhyItMatters />
+    <FounderSection />
     <CTA />
   </main>
 )
