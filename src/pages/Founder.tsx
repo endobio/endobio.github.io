@@ -27,7 +27,7 @@ export default function Founder() {
         <div className="mx-auto max-w-4xl px-6 py-20 sm:py-28 lg:px-8">
           <div className="text-center">
             <img
-              src="https://media.licdn.com/dms/image/v2/D5603AQEsinehXomZ8w/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1699906366929?e=2147483647&v=beta&t=m13Rvfhg9gQBMzpV5aK0prfTnEKt6uieczxnDjmsGEg"
+              src="/keshav.jpg"
               alt="Keshav Dial"
               className="mx-auto h-32 w-32 rounded-full object-cover mb-6 ring-4 ring-[#4caf50]/20"
             />
