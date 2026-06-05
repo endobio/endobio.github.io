@@ -4,7 +4,7 @@ import posthog from '../lib/posthog'
 
 export default function ForInvestors() {
   useEffect(() => {
-    posthog.capture('investors_page_viewed')
+    posthog.capture('investor_page_viewed')
   }, [])
 
   return (
@@ -30,162 +30,167 @@ export default function ForInvestors() {
               The biology layer of precision agriculture
             </h1>
             <p className="mt-6 text-xl leading-8 text-gray-700">
-              Defensible market opportunity. Integrated platform. Clear path to unit economics.
+              Defensible market opportunity. Integrated platform. Founder with deep domain expertise.
             </p>
           </div>
         </div>
       </div>
 
-      {/* Market Opportunity */}
+      {/* Company Overview */}
       <div className="py-20 bg-white">
         <div className="mx-auto max-w-4xl px-6 lg:px-8">
-          <h2 className="text-3xl font-bold text-gray-900 mb-12">
-            Market Opportunity
-          </h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-8">What We're Building</h2>
+          <div className="rounded-xl bg-gradient-to-r from-[#4caf50] to-[#a5d6a7] p-10 text-white mb-10">
+            <p className="text-2xl font-semibold italic leading-relaxed">
+              "Plants are talking. We haven't started listening."
+            </p>
+          </div>
+          <p className="text-lg text-gray-700 leading-8 mb-6">
+            EndoBio is building a molecular sensing platform that combines biological intelligence, sensor engineering, and AI-driven analytics to detect crop stress and disease weeks before visible symptoms appear.
+          </p>
+          <p className="text-lg text-gray-700 leading-8">
+            Our platform spans the full stack: scientific discovery, electrochemical biosensing, edge AI, and distributed field intelligence — giving farmers actionable signals while there's still time to act.
+          </p>
+        </div>
+      </div>
+
+      {/* Market Opportunity */}
+      <div className="py-20 bg-gray-50">
+        <div className="mx-auto max-w-4xl px-6 lg:px-8">
+          <h2 className="text-3xl font-bold text-gray-900 mb-12">Market Opportunity</h2>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 mb-12">
             <div>
-              <p className="text-4xl font-bold text-[#4caf50] mb-3">
-                $1.7T
-              </p>
-              <p className="text-gray-700">
-                Annual global crop loss from disease and pests
-              </p>
+              <p className="text-4xl font-bold text-[#4caf50] mb-3">$1.7T</p>
+              <p className="text-gray-700">Annual global crop loss from disease and pests</p>
             </div>
             <div>
-              <p className="text-4xl font-bold text-[#4caf50] mb-3">
-                20-40%
-              </p>
-              <p className="text-gray-700">
-                Of crop loss could be prevented with early detection
-              </p>
+              <p className="text-4xl font-bold text-[#4caf50] mb-3">20–40%</p>
+              <p className="text-gray-700">Of crop loss preventable with earlier detection</p>
             </div>
           </div>
 
           <div className="rounded-lg bg-blue-50 p-8 border-l-4 border-blue-500">
-            <h3 className="font-semibold text-gray-900 mb-3">
-              Why now?
-            </h3>
+            <h3 className="font-semibold text-gray-900 mb-3">Why now?</h3>
             <ul className="space-y-2 text-gray-700">
-              <li>• AI capabilities have matured enough for edge inference</li>
+              <li>• Climate change is accelerating disease pressure and environmental volatility</li>
+              <li>• Agriculture is rapidly adopting precision technologies</li>
+              <li>• AI capabilities now enable molecular signal identification at field scale</li>
               <li>• Sensor costs have dropped to enable distributed deployment</li>
-              <li>• Farmers are ready for data-driven decision making</li>
-              <li>• Climate change is increasing disease pressure</li>
             </ul>
           </div>
         </div>
       </div>
 
-      {/* Why EndoBio Wins */}
-      <div className="py-20 bg-gray-50">
-        <div className="mx-auto max-w-4xl px-6 lg:px-8">
-          <h2 className="text-3xl font-bold text-gray-900 mb-12">
-            Why EndoBio Wins
-          </h2>
-
-          <div className="space-y-6">
-            <div className="rounded-lg bg-white p-8 ring-1 ring-gray-200">
-              <h3 className="text-xl font-semibold text-gray-900 mb-3">
-                Defensible Moat
-              </h3>
-              <p className="text-gray-700">
-                Early detection capability built on proprietary data collection, real-world farm networks, and continuous model improvement. Farmers can't replicate this—it requires deployed hardware, real-time field data, and years of learning.
-              </p>
-            </div>
-
-            <div className="rounded-lg bg-white p-8 ring-1 ring-gray-200">
-              <h3 className="text-xl font-semibold text-gray-900 mb-3">
-                Integrated Platform
-              </h3>
-              <p className="text-gray-700">
-                Most AgTech companies are software-only or hardware-only. EndoBio vertically integrates discovery, sensing, and inference. This creates switching costs and defensibility that pure software plays can't match.
-              </p>
-            </div>
-
-            <div className="rounded-lg bg-white p-8 ring-1 ring-gray-200">
-              <h3 className="text-xl font-semibold text-gray-900 mb-3">
-                Recurring Revenue
-              </h3>
-              <p className="text-gray-700">
-                Value is measured in prevented crop loss. Farmers see ROI immediately. Early adopters become long-term customers because the business case is clear—lower losses pay for the service many times over.
-              </p>
-            </div>
-
-            <div className="rounded-lg bg-white p-8 ring-1 ring-gray-200">
-              <h3 className="text-xl font-semibold text-gray-900 mb-3">
-                Expansion Path
-              </h3>
-              <p className="text-gray-700">
-                Start with disease detection. Expand to broader crop health monitoring, yield optimization, and soil health. Each farm becomes a long-term intelligence asset.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      {/* Business Model */}
+      {/* Current Milestones */}
       <div className="py-20 bg-white">
         <div className="mx-auto max-w-4xl px-6 lg:px-8">
-          <h2 className="text-3xl font-bold text-gray-900 mb-12">
-            Unit Economics
-          </h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-12">Current Milestones</h2>
 
-          <div className="rounded-lg bg-green-50 p-8 border-l-4 border-[#4caf50]">
-            <h3 className="font-semibold text-gray-900 mb-6">
-              Economics that work
-            </h3>
-            <div className="space-y-4">
-              <div>
-                <p className="font-semibold text-gray-900 mb-1">
-                  Deployment cost per farm
-                </p>
-                <p className="text-gray-700">
-                  Reasonable first installation, then recurring SaaS model for monitoring and alerts
-                </p>
+          <div className="space-y-3 mb-10">
+            {[
+              'Agricultural disease intelligence platform operational',
+              'Global disease surveillance and literature mining pipeline developed',
+              'Knowledge graph for pathogen, crop, and biomarker discovery',
+              'AI-guided target identification workflows',
+              'Prototype electrochemical sensing platform completed',
+            ].map((item) => (
+              <div key={item} className="flex items-start gap-3">
+                <span className="mt-0.5 flex-shrink-0 text-[#4caf50] font-bold text-lg">✓</span>
+                <p className="text-gray-800">{item}</p>
+              </div>
+            ))}
+          </div>
+
+          <div className="border-t border-gray-200 pt-8 space-y-3">
+            {[
+              'Greenhouse validation in development',
+              'Pilot partner discussions underway',
+            ].map((item) => (
+              <div key={item} className="flex items-start gap-3">
+                <span className="mt-0.5 flex-shrink-0 text-[#4caf50] font-bold text-lg">→</span>
+                <p className="text-gray-600 italic">{item}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+
+      {/* Founder */}
+      <div className="py-20 bg-gray-50">
+        <div className="mx-auto max-w-4xl px-6 lg:px-8">
+          <h2 className="text-3xl font-bold text-gray-900 mb-10">Founder</h2>
+
+          <div className="rounded-xl bg-white ring-1 ring-gray-200 p-8">
+            <div className="flex flex-col sm:flex-row gap-8">
+              <div className="flex-shrink-0">
+                <div className="h-20 w-20 rounded-full bg-gradient-to-br from-[#4caf50] to-[#a5d6a7] flex items-center justify-center text-white text-2xl font-bold">
+                  KD
+                </div>
               </div>
               <div>
-                <p className="font-semibold text-gray-900 mb-1">
-                  Farmer ROI
-                </p>
-                <p className="text-gray-700">
-                  Early disease detection prevents 5-15% yield loss. At commodity prices, a single prevented disease event pays for years of service
-                </p>
-              </div>
-              <div>
-                <p className="font-semibold text-gray-900 mb-1">
-                  Margins
-                </p>
-                <p className="text-gray-700">
-                  Edge AI keeps infrastructure costs low. Real-time detection runs on-farm, not in expensive cloud infrastructure
-                </p>
+                <h3 className="text-xl font-bold text-gray-900 mb-1">Keshav Dial</h3>
+                <p className="text-[#4caf50] font-semibold mb-4">Founder & CEO</p>
+                <div className="space-y-3 text-gray-700 text-sm leading-7">
+                  <p>PhD in Biochemistry. Career at the intersection of machine learning, bioinformatics, and scientific instrumentation.</p>
+                  <p>Built genomic mining, metabolomics, and biological discovery platforms supporting agricultural research at Indigo Ag, Corteva Agriscience, and Bayer Crop Science. Led development of enterprise AI systems and agentic infrastructure at Sanofi.</p>
+                </div>
+                <a
+                  href="/#/founder"
+                  className="inline-flex items-center gap-1.5 mt-5 text-[#4caf50] font-semibold hover:text-[#45a049] transition-colors text-sm"
+                >
+                  Full profile <ArrowRightIcon className="h-4 w-4" />
+                </a>
               </div>
             </div>
           </div>
         </div>
       </div>
 
-      {/* The Vision */}
+      {/* Why EndoBio Wins */}
+      <div className="py-20 bg-white">
+        <div className="mx-auto max-w-4xl px-6 lg:px-8">
+          <h2 className="text-3xl font-bold text-gray-900 mb-12">Why EndoBio Wins</h2>
+
+          <div className="space-y-6">
+            {[
+              {
+                title: 'Defensible Moat',
+                body: 'Early detection capability built on proprietary data collection, real-world farm networks, and continuous model improvement. The platform requires deployed hardware, real-time field data, and years of learning — not replicable by software-only plays.',
+              },
+              {
+                title: 'Integrated Platform',
+                body: 'EndoBio vertically integrates discovery, sensing, and inference. This creates switching costs and defensibility that pure software plays cannot match.',
+              },
+              {
+                title: 'Recurring Revenue',
+                body: 'Value is measured in prevented crop loss. A single prevented disease event pays for years of service — making the ROI case clear from day one.',
+              },
+              {
+                title: 'Expansion Path',
+                body: 'Start with disease detection. Expand to broader crop health monitoring, yield optimization, and soil health. Each farm becomes a long-term intelligence asset.',
+              },
+            ].map((item) => (
+              <div key={item.title} className="rounded-lg bg-white p-8 ring-1 ring-gray-200">
+                <h3 className="text-xl font-semibold text-gray-900 mb-3">{item.title}</h3>
+                <p className="text-gray-700">{item.body}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+
+      {/* Fundraising Status */}
       <div className="py-20 bg-gray-50">
         <div className="mx-auto max-w-4xl px-6 lg:px-8">
-          <h2 className="text-3xl font-bold text-gray-900 mb-12">
-            Long-term Vision
-          </h2>
-
-          <div className="rounded-lg bg-gradient-to-r from-[#4caf50] to-[#a5d6a7] p-10 text-white">
-            <h3 className="text-2xl font-bold mb-6">
-              A continuously learning intelligence network
-            </h3>
-            <div className="space-y-4">
-              <p>
-                <span className="font-bold">Year 1-2:</span> Deploy disease detection across early adopter farms, build proof points, achieve unit economics
-              </p>
-              <p>
-                <span className="font-bold">Year 3+:</span> Expand to broader crop health monitoring, build network effects where farm data improves models for all farmers
-              </p>
-              <p>
-                <span className="font-bold">Long-term:</span> The platform becomes the infrastructure layer for biological intelligence in agriculture—what traditional soil testing used to be, but real-time and AI-driven
-              </p>
-            </div>
+          <h2 className="text-3xl font-bold text-gray-900 mb-8">Fundraising</h2>
+          <div className="rounded-lg bg-white ring-1 ring-gray-200 p-8">
+            <p className="text-lg text-gray-700 leading-8 mb-6">
+              EndoBio is currently raising its pre-seed round to fund greenhouse validation, initial field pilots, and team expansion.
+            </p>
+            <p className="text-gray-600">
+              For deck access and detailed materials, reach out directly.
+            </p>
           </div>
         </div>
       </div>
@@ -193,20 +198,27 @@ export default function ForInvestors() {
       {/* CTA */}
       <div className="py-20 bg-white">
         <div className="mx-auto max-w-4xl px-6 lg:px-8 text-center">
-          <h2 className="text-3xl font-bold text-gray-900 mb-6">
-            Let's talk
-          </h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-6">Let's talk</h2>
           <p className="text-lg text-gray-700 mb-10">
-            We're building the future of agricultural intelligence. If you see the opportunity, let's connect.
+            If you see the opportunity, we'd like to hear from you.
           </p>
-          <a
-            href="mailto:keshav@endobio.ai?subject=Partnership Inquiry (Investor)"
-            className="inline-flex items-center gap-2 rounded-lg bg-[#4caf50] px-10 py-4 font-semibold text-white hover:bg-[#45a049] transition-colors"
-            onClick={() => posthog.capture('investor_contact_clicked', { location: 'investors_page' })}
-          >
-            Schedule a conversation
-            <ArrowRightIcon className="h-5 w-5" />
-          </a>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <a
+              href="mailto:keshav@endobio.ai?subject=Investor Inquiry"
+              className="inline-flex items-center gap-2 rounded-lg bg-[#4caf50] px-10 py-4 font-semibold text-white hover:bg-[#45a049] transition-colors"
+              onClick={() => posthog.capture('investor_contact_clicked', { location: 'investors_page' })}
+            >
+              Schedule a conversation
+              <ArrowRightIcon className="h-5 w-5" />
+            </a>
+            <a
+              href="mailto:keshav@endobio.ai?subject=Deck Request"
+              className="inline-flex items-center gap-2 rounded-lg bg-white px-10 py-4 font-semibold text-gray-900 ring-1 ring-gray-300 hover:bg-gray-50 transition-colors"
+              onClick={() => posthog.capture('deck_requested', { location: 'investors_page' })}
+            >
+              Request the deck
+            </a>
+          </div>
         </div>
       </div>
     </div>

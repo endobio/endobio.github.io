@@ -18,11 +18,14 @@ export default function Hero() {
 
       <div className="mx-auto max-w-4xl px-6 py-24 sm:py-32 lg:px-8">
         <div className="text-center">
+          <p className="text-base font-semibold text-[#4caf50] uppercase tracking-widest mb-4">
+            EndoBio
+          </p>
           <h1 className="text-6xl font-bold tracking-tight text-gray-900 sm:text-7xl">
-            Catch disease before it spreads
+            Plants are talking. We haven't started listening.
           </h1>
           <p className="mt-6 text-xl leading-8 text-gray-700">
-            Early detection changes everything. EndoBio detects crop disease weeks before visible symptoms emerge.
+            EndoBio detects the biological signals of crop disease weeks before visible symptoms appear.
           </p>
           <div className="mt-12 flex flex-col sm:flex-row items-center justify-center gap-x-6 gap-y-4">
             <a
