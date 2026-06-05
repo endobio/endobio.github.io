@@ -124,9 +124,11 @@ export default function ForInvestors() {
           <div className="rounded-xl bg-white ring-1 ring-gray-200 p-8">
             <div className="flex flex-col sm:flex-row gap-8">
               <div className="flex-shrink-0">
-                <div className="h-20 w-20 rounded-full bg-gradient-to-br from-[#4caf50] to-[#a5d6a7] flex items-center justify-center text-white text-2xl font-bold">
-                  KD
-                </div>
+                <img
+                  src="https://media.licdn.com/dms/image/v2/D5603AQEsinehXomZ8w/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1699906366929?e=2147483647&v=beta&t=m13Rvfhg9gQBMzpV5aK0prfTnEKt6uieczxnDjmsGEg"
+                  alt="Keshav Dial"
+                  className="h-20 w-20 rounded-full object-cover"
+                />
               </div>
               <div>
                 <h3 className="text-xl font-bold text-gray-900 mb-1">Keshav Dial</h3>
