@@ -14,7 +14,7 @@ export default function FounderSection() {
             <div className="flex flex-col sm:flex-row gap-8">
               <div className="flex-shrink-0">
                 <img
-                  src="https://media.licdn.com/dms/image/v2/D5603AQEsinehXomZ8w/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1699906366929?e=2147483647&v=beta&t=m13Rvfhg9gQBMzpV5aK0prfTnEKt6uieczxnDjmsGEg"
+                  src="/keshav.jpg"
                   alt="Keshav Dial"
                   className="h-24 w-24 rounded-full object-cover"
                 />
