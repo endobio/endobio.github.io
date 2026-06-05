@@ -1,3 +1,5 @@
+import posthog from '../../lib/posthog'
+
 export default function CTA() {
   return (
     <div className="py-24 sm:py-32 bg-gray-50">
@@ -14,12 +16,14 @@ export default function CTA() {
             <a
               href="/#/farmers"
               className="inline-block rounded-lg bg-[#4caf50] px-8 py-4 font-semibold text-white hover:bg-[#45a049] transition-colors"
+              onClick={() => posthog.capture('vision_cta_clicked', { cta_type: 'farmers', location: 'vision' })}
             >
               For Farmers
             </a>
             <a
               href="/#/investors"
               className="inline-block rounded-lg bg-white px-8 py-4 font-semibold text-gray-900 ring-1 ring-gray-300 hover:bg-gray-50 transition-colors"
+              onClick={() => posthog.capture('vision_cta_clicked', { cta_type: 'investors', location: 'vision' })}
             >
               For Investors
             </a>

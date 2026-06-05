@@ -1,6 +1,12 @@
+import { useEffect } from 'react'
 import { ArrowRightIcon } from '@heroicons/react/20/solid'
+import posthog from '../lib/posthog'
 
 export default function ForInvestors() {
+  useEffect(() => {
+    posthog.capture('investors_page_viewed')
+  }, [])
+
   return (
     <div>
       {/* Hero */}
@@ -196,6 +202,7 @@ export default function ForInvestors() {
           <a
             href="mailto:keshav@endobio.ai?subject=Partnership Inquiry (Investor)"
             className="inline-flex items-center gap-2 rounded-lg bg-[#4caf50] px-10 py-4 font-semibold text-white hover:bg-[#45a049] transition-colors"
+            onClick={() => posthog.capture('investor_contact_clicked', { location: 'investors_page' })}
           >
             Schedule a conversation
             <ArrowRightIcon className="h-5 w-5" />

@@ -1,6 +1,12 @@
+import { useEffect } from 'react'
 import { CheckIcon, ArrowRightIcon } from '@heroicons/react/20/solid'
+import posthog from '../lib/posthog'
 
 export default function ForFarmers() {
+  useEffect(() => {
+    posthog.capture('farmers_page_viewed')
+  }, [])
+
   return (
     <div>
       {/* Hero */}
@@ -157,6 +163,7 @@ export default function ForFarmers() {
           <a
             href="mailto:keshav@endobio.ai?subject=Interest: Early Access (Farmer)"
             className="inline-flex items-center gap-2 rounded-lg bg-[#4caf50] px-10 py-4 font-semibold text-white hover:bg-[#45a049] transition-colors"
+            onClick={() => posthog.capture('farmer_early_access_clicked', { location: 'farmers_page' })}
           >
             Request early access
             <ArrowRightIcon className="h-5 w-5" />

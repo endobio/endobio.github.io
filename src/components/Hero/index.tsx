@@ -1,3 +1,5 @@
+import posthog from '../../lib/posthog'
+
 export default function Hero() {
   return (
     <div className="relative isolate pt-14">
@@ -26,12 +28,14 @@ export default function Hero() {
             <a
               href="/#/farmers"
               className="rounded-md bg-[#4caf50] px-8 py-3 text-sm font-semibold text-white shadow-sm hover:bg-[#45a049] transition-colors"
+              onClick={() => posthog.capture('hero_cta_clicked', { cta_type: 'farmers', location: 'hero' })}
             >
               For Farmers
             </a>
             <a
               href="/#/investors"
               className="rounded-md bg-gray-100 px-8 py-3 text-sm font-semibold text-gray-900 hover:bg-gray-200 transition-colors"
+              onClick={() => posthog.capture('hero_cta_clicked', { cta_type: 'investors', location: 'hero' })}
             >
               For Investors
             </a>

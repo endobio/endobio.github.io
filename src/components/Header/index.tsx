@@ -1,6 +1,7 @@
 'use client'
 
 import { useState } from 'react'
+import posthog from '../../lib/posthog'
 import {
   Dialog,
   DialogPanel,
@@ -96,16 +97,23 @@ export default function Header() {
         </PopoverGroup>
         <div className="hidden lg:flex lg:flex-1 lg:justify-end lg:gap-x-6">
           {authActions.map((action) => (
-            <a key={action.name} href={action.href} className="text-sm/6 font-semibold text-gray-900">
+            <a
+              key={action.name}
+              href={action.href}
+              className="text-sm/6 font-semibold text-gray-900"
+              onClick={() => posthog.capture('header_contact_clicked', { location: 'header', label: action.name })}
+            >
               {action.name}
             </a>
           ))}
         </div>
         <div className="hidden lg:flex lg:flex-1 lg:justify-end lg:gap-x-6">
           {primaryActions.map((action) => (
-            <a 
-            key={action.name} href={action.href} 
-            className="px-6 py-2 bg-[#6e6e6e] text-white font-semibold rounded-full hover:opacity-80 transition-opacity duration-300"
+            <a
+              key={action.name}
+              href={action.href}
+              className="px-6 py-2 bg-[#6e6e6e] text-white font-semibold rounded-full hover:opacity-80 transition-opacity duration-300"
+              onClick={() => posthog.capture('header_get_started_clicked', { location: 'header', label: action.name })}
             >
               {action.name}
             </a>
