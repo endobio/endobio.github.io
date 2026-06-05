@@ -96,6 +96,6 @@ export const mainNavItems: NavItem[] = [
   {
     name: 'About',
     type: 'link',
-    href: '#',
+    href: '#/founder',
   },
 ]
