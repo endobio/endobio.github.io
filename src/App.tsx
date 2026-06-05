@@ -10,6 +10,7 @@ import WhyItMatters from './components/Difference';
 import CTA from './components/Vision';
 import ForFarmers from './pages/ForFarmers';
 import ForInvestors from './pages/ForInvestors';
+import Founder from './pages/Founder';
 
 const HomePage = () => (
   <main>
@@ -30,6 +31,7 @@ const App = () => {
         <Route path="/" element={<HomePage />} />
         <Route path="/farmers" element={<ForFarmers />} />
         <Route path="/investors" element={<ForInvestors />} />
+        <Route path="/founder" element={<Founder />} />
       </Routes>
       <Footer />
     </Router>
