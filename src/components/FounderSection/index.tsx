@@ -22,15 +22,12 @@ export default function FounderSection() {
               <div>
                 <h3 className="text-2xl font-bold text-gray-900 mb-1">Keshav Dial</h3>
                 <p className="text-[#4caf50] font-semibold mb-5">Founder & CEO, EndoBio</p>
-                <div className="space-y-4 text-gray-700 leading-7">
+                <div className="space-y-3 text-gray-700 leading-7">
                   <p>
-                    Keshav holds a PhD in Biochemistry and has spent his career developing AI, bioinformatics, and biological discovery systems.
+                    PhD in Biochemistry. Built production AI systems at scale. Career at the intersection of machine learning, bioinformatics, and biological discovery.
                   </p>
                   <p>
-                    Prior to founding EndoBio, he built genomic mining, metabolomics, and biological discovery platforms supporting agricultural research initiatives involving Indigo Ag, Corteva Agriscience, and Bayer Crop Science. He later led development of enterprise AI systems and agentic infrastructure at Sanofi.
-                  </p>
-                  <p>
-                    Today, he is combining biological intelligence, sensor engineering, and machine learning to build a new generation of agricultural sensing systems.
+                    Built genomic and metabolomic discovery platforms for agricultural R&D at Indigo Ag, Corteva Agriscience, and Bayer Crop Science. At Sanofi, designed and shipped multiple end-to-end AI systems — including the proof of concept for <span className="font-semibold text-gray-900">Sanofi Concierge</span>, the company's globally deployed internal AI assistant — and architected a biomedical knowledge graph platform in Neo4j with graph-based RAG.
                   </p>
                 </div>
                 <div className="mt-6">
