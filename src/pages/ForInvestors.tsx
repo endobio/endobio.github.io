@@ -26,26 +26,45 @@ export default function ForInvestors() {
 
         <div className="mx-auto max-w-4xl px-6 py-20 sm:py-28 lg:px-8">
           <div className="text-center">
+            <p className="text-sm font-semibold text-[#4caf50] uppercase tracking-widest mb-4">
+              Pre-Seed · Actively Raising
+            </p>
             <h1 className="text-5xl font-bold tracking-tight text-gray-900 sm:text-6xl">
               The biology layer of precision agriculture
             </h1>
             <p className="mt-6 text-xl leading-8 text-gray-700">
-              Defensible market opportunity. Integrated platform. Founder with deep domain expertise.
+              Molecular sensing platform for crop disease detection. Technology operational. Raising to reach the field.
             </p>
+            <div className="mt-10 flex flex-col sm:flex-row gap-4 justify-center">
+              <a
+                href="mailto:keshav@endobio.ai?subject=Investor Inquiry"
+                className="inline-flex items-center gap-2 rounded-lg bg-[#4caf50] px-8 py-4 font-semibold text-white hover:bg-[#45a049] transition-colors"
+                onClick={() => posthog.capture('investor_contact_clicked', { location: 'investors_hero' })}
+              >
+                Schedule a conversation
+                <ArrowRightIcon className="h-5 w-5" />
+              </a>
+              <a
+                href="mailto:keshav@endobio.ai?subject=Deck Request"
+                className="inline-flex items-center gap-2 rounded-lg bg-white px-8 py-4 font-semibold text-gray-900 ring-1 ring-gray-300 hover:bg-gray-50 transition-colors"
+                onClick={() => posthog.capture('deck_requested', { location: 'investors_hero' })}
+              >
+                Request investor materials
+              </a>
+            </div>
           </div>
         </div>
       </div>
 
-      {/* Company Overview */}
+      {/* What we're building */}
       <div className="py-20 bg-white">
         <div className="mx-auto max-w-4xl px-6 lg:px-8">
-          <h2 className="text-3xl font-bold text-gray-900 mb-8">What We're Building</h2>
-          <div className="rounded-xl bg-gradient-to-r from-[#4caf50] to-[#a5d6a7] p-10 text-white mb-10">
+          <div className="rounded-xl bg-gradient-to-r from-[#4caf50] to-[#a5d6a7] p-10 text-white mb-12">
             <p className="text-2xl font-semibold italic leading-relaxed">
               "Plants are talking. We haven't started listening."
             </p>
           </div>
-          <p className="text-lg text-gray-700 leading-8 mb-6">
+          <p className="text-lg text-gray-700 leading-8 mb-4">
             EndoBio is building a molecular sensing platform that combines biological intelligence, sensor engineering, and AI-driven analytics to detect crop stress and disease weeks before visible symptoms appear.
           </p>
           <p className="text-lg text-gray-700 leading-8">
@@ -54,7 +73,7 @@ export default function ForInvestors() {
         </div>
       </div>
 
-      {/* Market Opportunity */}
+      {/* Market */}
       <div className="py-20 bg-gray-50">
         <div className="mx-auto max-w-4xl px-6 lg:px-8">
           <h2 className="text-3xl font-bold text-gray-900 mb-12">Market Opportunity</h2>
@@ -66,26 +85,27 @@ export default function ForInvestors() {
             </div>
             <div>
               <p className="text-4xl font-bold text-[#4caf50] mb-3">20–40%</p>
-              <p className="text-gray-700">Of crop loss preventable with earlier detection</p>
+              <p className="text-gray-700">Of that loss preventable with earlier detection</p>
             </div>
           </div>
 
           <div className="rounded-lg bg-blue-50 p-8 border-l-4 border-blue-500">
             <h3 className="font-semibold text-gray-900 mb-3">Why now?</h3>
             <ul className="space-y-2 text-gray-700">
-              <li>• Climate change is accelerating disease pressure and environmental volatility</li>
+              <li>• Climate change is accelerating disease pressure globally</li>
               <li>• Agriculture is rapidly adopting precision technologies</li>
-              <li>• AI capabilities now enable molecular signal identification at field scale</li>
-              <li>• Sensor costs have dropped to enable distributed deployment</li>
+              <li>• AI and sensor costs now enable molecular detection at field scale</li>
+              <li>• First-mover advantage in biological sensing is available today</li>
             </ul>
           </div>
         </div>
       </div>
 
-      {/* Current Milestones */}
+      {/* Current milestones */}
       <div className="py-20 bg-white">
         <div className="mx-auto max-w-4xl px-6 lg:px-8">
-          <h2 className="text-3xl font-bold text-gray-900 mb-12">Current Milestones</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-4">Where We Are</h2>
+          <p className="text-gray-600 mb-10">Technology development is underway. Core platform is operational.</p>
 
           <div className="space-y-3 mb-10">
             {[
@@ -116,8 +136,50 @@ export default function ForInvestors() {
         </div>
       </div>
 
-      {/* Founder */}
+      {/* Raise */}
       <div className="py-20 bg-gray-50">
+        <div className="mx-auto max-w-4xl px-6 lg:px-8">
+          <h2 className="text-3xl font-bold text-gray-900 mb-10">The Raise</h2>
+
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 mb-10">
+            <div className="rounded-xl bg-white ring-1 ring-gray-200 p-6">
+              <p className="text-sm font-semibold text-gray-500 uppercase tracking-widest mb-2">Stage</p>
+              <p className="text-xl font-bold text-gray-900">Pre-Seed</p>
+            </div>
+            <div className="rounded-xl bg-white ring-1 ring-gray-200 p-6">
+              <p className="text-sm font-semibold text-gray-500 uppercase tracking-widest mb-2">Round Size</p>
+              <p className="text-xl font-bold text-gray-900">$1.5M</p>
+            </div>
+            <div className="rounded-xl bg-white ring-1 ring-gray-200 p-6">
+              <p className="text-sm font-semibold text-gray-500 uppercase tracking-widest mb-2">Status</p>
+              <p className="text-xl font-bold text-[#4caf50]">Actively Raising</p>
+            </div>
+          </div>
+
+          <div className="rounded-xl bg-white ring-1 ring-gray-200 p-8">
+            <h3 className="text-lg font-semibold text-gray-900 mb-6">What $1.5M unlocks</h3>
+            <div className="space-y-5">
+              {[
+                { milestone: 'Greenhouse validation', detail: 'Demonstrate early detection across multiple crop types in controlled conditions' },
+                { milestone: 'Field pilots', detail: 'Deploy with 3–5 farm partners to generate real-world proof points and data' },
+                { milestone: 'Team expansion', detail: 'Add key hires in hardware engineering and field operations' },
+                { milestone: 'Series A readiness', detail: 'Validated unit economics and a clear path to commercial deployment' },
+              ].map((item) => (
+                <div key={item.milestone} className="flex gap-4">
+                  <span className="mt-0.5 flex-shrink-0 text-[#4caf50] font-bold">→</span>
+                  <div>
+                    <p className="font-semibold text-gray-900">{item.milestone}</p>
+                    <p className="text-gray-600 text-sm">{item.detail}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Founder */}
+      <div className="py-20 bg-white">
         <div className="mx-auto max-w-4xl px-6 lg:px-8">
           <h2 className="text-3xl font-bold text-gray-900 mb-10">Founder</h2>
 
@@ -140,6 +202,7 @@ export default function ForInvestors() {
                 <a
                   href="/#/founder"
                   className="inline-flex items-center gap-1.5 mt-5 text-[#4caf50] font-semibold hover:text-[#45a049] transition-colors text-sm"
+                  onClick={() => posthog.capture('founder_profile_clicked', { location: 'investors_page' })}
                 >
                   Full profile <ArrowRightIcon className="h-4 w-4" />
                 </a>
@@ -149,28 +212,27 @@ export default function ForInvestors() {
         </div>
       </div>
 
-      {/* Why EndoBio Wins */}
-      <div className="py-20 bg-white">
+      {/* Why EndoBio wins */}
+      <div className="py-20 bg-gray-50">
         <div className="mx-auto max-w-4xl px-6 lg:px-8">
           <h2 className="text-3xl font-bold text-gray-900 mb-12">Why EndoBio Wins</h2>
-
           <div className="space-y-6">
             {[
               {
                 title: 'Defensible Moat',
-                body: 'Early detection capability built on proprietary data collection, real-world farm networks, and continuous model improvement. The platform requires deployed hardware, real-time field data, and years of learning — not replicable by software-only plays.',
+                body: 'Early detection built on proprietary data, real-world farm networks, and continuous model improvement. Requires deployed hardware, real-time field data, and years of learning — not replicable by software-only plays.',
               },
               {
                 title: 'Integrated Platform',
-                body: 'EndoBio vertically integrates discovery, sensing, and inference. This creates switching costs and defensibility that pure software plays cannot match.',
+                body: 'EndoBio vertically integrates discovery, sensing, and inference. This creates switching costs and defensibility that point solutions cannot match.',
               },
               {
-                title: 'Recurring Revenue',
-                body: 'Value is measured in prevented crop loss. A single prevented disease event pays for years of service — making the ROI case clear from day one.',
+                title: 'Clear ROI for Customers',
+                body: 'A single prevented disease event pays for years of service. The business case is immediate — farmers see returns before the season is over.',
               },
               {
                 title: 'Expansion Path',
-                body: 'Start with disease detection. Expand to broader crop health monitoring, yield optimization, and soil health. Each farm becomes a long-term intelligence asset.',
+                body: 'Start with disease detection. Expand to broader crop health monitoring and yield optimization. Each farm becomes a long-term intelligence asset.',
               },
             ].map((item) => (
               <div key={item.title} className="rounded-lg bg-white p-8 ring-1 ring-gray-200">
@@ -182,33 +244,18 @@ export default function ForInvestors() {
         </div>
       </div>
 
-      {/* Fundraising Status */}
-      <div className="py-20 bg-gray-50">
-        <div className="mx-auto max-w-4xl px-6 lg:px-8">
-          <h2 className="text-3xl font-bold text-gray-900 mb-8">Fundraising</h2>
-          <div className="rounded-lg bg-white ring-1 ring-gray-200 p-8">
-            <p className="text-lg text-gray-700 leading-8 mb-6">
-              EndoBio is currently raising its pre-seed round to fund greenhouse validation, initial field pilots, and team expansion.
-            </p>
-            <p className="text-gray-600">
-              For deck access and detailed materials, reach out directly.
-            </p>
-          </div>
-        </div>
-      </div>
-
       {/* CTA */}
       <div className="py-20 bg-white">
         <div className="mx-auto max-w-4xl px-6 lg:px-8 text-center">
-          <h2 className="text-3xl font-bold text-gray-900 mb-6">Let's talk</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-4">Let's talk</h2>
           <p className="text-lg text-gray-700 mb-10">
-            If you see the opportunity, we'd like to hear from you.
+            We're building the molecular sensing layer for modern agriculture. If you see the opportunity, we'd like to hear from you.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
               href="mailto:keshav@endobio.ai?subject=Investor Inquiry"
               className="inline-flex items-center gap-2 rounded-lg bg-[#4caf50] px-10 py-4 font-semibold text-white hover:bg-[#45a049] transition-colors"
-              onClick={() => posthog.capture('investor_contact_clicked', { location: 'investors_page' })}
+              onClick={() => posthog.capture('investor_contact_clicked', { location: 'investors_cta' })}
             >
               Schedule a conversation
               <ArrowRightIcon className="h-5 w-5" />
@@ -216,9 +263,9 @@ export default function ForInvestors() {
             <a
               href="mailto:keshav@endobio.ai?subject=Deck Request"
               className="inline-flex items-center gap-2 rounded-lg bg-white px-10 py-4 font-semibold text-gray-900 ring-1 ring-gray-300 hover:bg-gray-50 transition-colors"
-              onClick={() => posthog.capture('deck_requested', { location: 'investors_page' })}
+              onClick={() => posthog.capture('deck_requested', { location: 'investors_cta' })}
             >
-              Request the deck
+              Request investor materials
             </a>
           </div>
         </div>

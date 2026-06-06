@@ -11,6 +11,7 @@ import WhyNow from './components/WhyNow';
 import Roadmap from './components/Roadmap';
 import WhyItMatters from './components/Difference';
 import FounderSection from './components/FounderSection';
+import TrustBar from './components/TrustBar';
 import CTA from './components/Vision';
 import ForFarmers from './pages/ForFarmers';
 import ForInvestors from './pages/ForInvestors';
@@ -27,6 +28,7 @@ const HomePage = () => (
     <Roadmap />
     <WhyItMatters />
     <FounderSection />
+    <TrustBar />
     <CTA />
   </main>
 )
