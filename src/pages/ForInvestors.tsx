@@ -30,10 +30,10 @@ export default function ForInvestors() {
               Pre-Seed · Actively Raising
             </p>
             <h1 className="text-5xl font-bold tracking-tight text-gray-900 sm:text-6xl">
-              The biology layer of precision agriculture
+              Building the infrastructure for field-scale biological intelligence
             </h1>
-            <p className="mt-6 text-xl leading-8 text-gray-700">
-              Molecular sensing platform for crop disease detection. Technology operational. Raising to reach the field.
+            <p className="mt-6 text-xl leading-8 text-gray-700 max-w-3xl mx-auto">
+              We spent years discovering biological signals for agriculture. EndoBio is building the systems required to measure those signals in the field and transform them into actionable intelligence.
             </p>
             <div className="mt-10 flex flex-col sm:flex-row gap-4 justify-center">
               <a
@@ -56,7 +56,7 @@ export default function ForInvestors() {
         </div>
       </div>
 
-      {/* What we're building */}
+      {/* Core narrative */}
       <div className="py-20 bg-white">
         <div className="mx-auto max-w-4xl px-6 lg:px-8">
           <div className="rounded-xl bg-gradient-to-r from-[#4caf50] to-[#a5d6a7] p-10 text-white mb-12">
@@ -64,12 +64,14 @@ export default function ForInvestors() {
               "Plants are talking. We haven't started listening."
             </p>
           </div>
-          <p className="text-lg text-gray-700 leading-8 mb-4">
-            EndoBio is building a molecular sensing platform that combines biological intelligence, sensor engineering, and AI-driven analytics to detect crop stress and disease weeks before visible symptoms appear.
-          </p>
-          <p className="text-lg text-gray-700 leading-8">
-            Our platform spans the full stack: scientific discovery, electrochemical biosensing, edge AI, and distributed field intelligence — giving farmers actionable signals while there's still time to act.
-          </p>
+          <div className="space-y-5 text-lg text-gray-700 leading-8">
+            <p>
+              The biological signals that indicate developing crop disease exist long before visible symptoms appear. Pathogens communicate. Plants respond. Metabolic pathways shift. These changes are measurable — but measuring them continuously, at field scale, has never been practical.
+            </p>
+            <p>
+              EndoBio is building the discovery, sensing, and analytics infrastructure required to make that measurement routine. The platform combines a biological knowledge graph, custom molecular sensors, and edge AI to create a continuous loop between biological discovery and agricultural action.
+            </p>
+          </div>
         </div>
       </div>
 
@@ -77,7 +79,6 @@ export default function ForInvestors() {
       <div className="py-20 bg-gray-50">
         <div className="mx-auto max-w-4xl px-6 lg:px-8">
           <h2 className="text-3xl font-bold text-gray-900 mb-12">Market Opportunity</h2>
-
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 mb-12">
             <div>
               <p className="text-4xl font-bold text-[#4caf50] mb-3">$1.7T</p>
@@ -88,32 +89,30 @@ export default function ForInvestors() {
               <p className="text-gray-700">Of that loss preventable with earlier detection</p>
             </div>
           </div>
-
           <div className="rounded-lg bg-blue-50 p-8 border-l-4 border-blue-500">
             <h3 className="font-semibold text-gray-900 mb-3">Why now?</h3>
             <ul className="space-y-2 text-gray-700">
               <li>• Climate change is accelerating disease pressure globally</li>
               <li>• Agriculture is rapidly adopting precision technologies</li>
-              <li>• AI and sensor costs now enable molecular detection at field scale</li>
-              <li>• First-mover advantage in biological sensing is available today</li>
+              <li>• Sensor costs now enable distributed field-scale deployment</li>
+              <li>• AI and biological data infrastructure are mature enough to act on these signals</li>
             </ul>
           </div>
         </div>
       </div>
 
-      {/* Current milestones */}
+      {/* What exists today */}
       <div className="py-20 bg-white">
         <div className="mx-auto max-w-4xl px-6 lg:px-8">
-          <h2 className="text-3xl font-bold text-gray-900 mb-4">Where We Are</h2>
-          <p className="text-gray-600 mb-10">Technology development is underway. Core platform is operational.</p>
-
-          <div className="space-y-3 mb-10">
+          <h2 className="text-3xl font-bold text-gray-900 mb-4">What Exists Today</h2>
+          <p className="text-gray-600 mb-10">Technology development is underway. Core systems are operational.</p>
+          <div className="space-y-3">
             {[
-              'Agricultural disease intelligence platform operational',
-              'Global disease surveillance and literature mining pipeline developed',
-              'Knowledge graph for pathogen, crop, and biomarker discovery',
-              'AI-guided target identification workflows',
-              'Prototype electrochemical sensing platform completed',
+              'Disease intelligence platform',
+              'Knowledge graph infrastructure',
+              'Biomarker discovery workflows',
+              'Prototype sensing platform',
+              'Root-zone sampling architecture',
             ].map((item) => (
               <div key={item} className="flex items-start gap-3">
                 <span className="mt-0.5 flex-shrink-0 text-[#4caf50] font-bold text-lg">✓</span>
@@ -121,22 +120,10 @@ export default function ForInvestors() {
               </div>
             ))}
           </div>
-
-          <div className="border-t border-gray-200 pt-8 space-y-3">
-            {[
-              'Greenhouse validation in development',
-              'Pilot partner discussions underway',
-            ].map((item) => (
-              <div key={item} className="flex items-start gap-3">
-                <span className="mt-0.5 flex-shrink-0 text-[#4caf50] font-bold text-lg">→</span>
-                <p className="text-gray-600 italic">{item}</p>
-              </div>
-            ))}
-          </div>
         </div>
       </div>
 
-      {/* Raise */}
+      {/* The raise */}
       <div className="py-20 bg-gray-50">
         <div className="mx-auto max-w-4xl px-6 lg:px-8">
           <h2 className="text-3xl font-bold text-gray-900 mb-10">The Raise</h2>
@@ -156,14 +143,15 @@ export default function ForInvestors() {
             </div>
           </div>
 
-          <div className="rounded-xl bg-white ring-1 ring-gray-200 p-8">
-            <h3 className="text-lg font-semibold text-gray-900 mb-6">What $1.5M unlocks</h3>
+          <div className="rounded-xl bg-white ring-1 ring-gray-200 p-8 mb-6">
+            <h3 className="text-lg font-semibold text-gray-900 mb-6">What This Round Unlocks</h3>
             <div className="space-y-5">
               {[
-                { milestone: 'Greenhouse validation', detail: 'Demonstrate early detection across multiple crop types in controlled conditions' },
-                { milestone: 'Field pilots', detail: 'Deploy with 3–5 farm partners to generate real-world proof points and data' },
-                { milestone: 'Team expansion', detail: 'Add key hires in hardware engineering and field operations' },
-                { milestone: 'Series A readiness', detail: 'Validated unit economics and a clear path to commercial deployment' },
+                { milestone: 'Biomarker validation', detail: 'Confirm sensing targets in controlled conditions' },
+                { milestone: 'Sensor calibration', detail: 'Precision validation against lab standards' },
+                { milestone: 'Greenhouse trials', detail: 'Demonstrate early detection across target crop diseases' },
+                { milestone: 'Pilot deployments', detail: 'Deploy with 3–5 farm partners to generate real-world proof points' },
+                { milestone: 'Commercial readiness', detail: 'Validated unit economics and a clear path to Series A' },
               ].map((item) => (
                 <div key={item.milestone} className="flex gap-4">
                   <span className="mt-0.5 flex-shrink-0 text-[#4caf50] font-bold">→</span>
@@ -175,6 +163,10 @@ export default function ForInvestors() {
               ))}
             </div>
           </div>
+
+          <p className="text-gray-600 text-sm leading-7">
+            EndoBio is raising capital to accelerate the transition from prototype systems to validated field deployments and commercial pilots.
+          </p>
         </div>
       </div>
 
@@ -182,22 +174,17 @@ export default function ForInvestors() {
       <div className="py-20 bg-white">
         <div className="mx-auto max-w-4xl px-6 lg:px-8">
           <h2 className="text-3xl font-bold text-gray-900 mb-10">Founder</h2>
-
           <div className="rounded-xl bg-white ring-1 ring-gray-200 p-8">
             <div className="flex flex-col sm:flex-row gap-8">
               <div className="flex-shrink-0">
-                <img
-                  src="/keshav.jpg"
-                  alt="Keshav Dial"
-                  className="h-20 w-20 rounded-full object-cover"
-                />
+                <img src="/keshav.jpg" alt="Keshav Dial" className="h-20 w-20 rounded-full object-cover" />
               </div>
               <div>
                 <h3 className="text-xl font-bold text-gray-900 mb-1">Keshav Dial</h3>
                 <p className="text-[#4caf50] font-semibold mb-4">Founder & CEO</p>
                 <div className="space-y-3 text-gray-700 text-sm leading-7">
-                  <p>PhD in Biochemistry. Career at the intersection of machine learning, bioinformatics, and biological discovery.</p>
-                  <p>Built genomic and metabolomic discovery platforms for agricultural R&D at Indigo Ag, Corteva Agriscience, and Bayer Crop Science. At Sanofi, designed and shipped multiple end-to-end AI systems — including the proof of concept for <span className="font-semibold text-gray-900">Sanofi Concierge</span>, the company's globally deployed internal AI assistant — and architected a biomedical knowledge graph platform with graph-based RAG prior to mainstream adoption.</p>
+                  <p>PhD in Biochemistry focused on AI-driven natural product discovery.</p>
+                  <p>Built genomic mining, metabolomic analysis, and biological discovery platforms supporting agricultural research involving Indigo Ag, Corteva Agriscience, and Bayer Crop Science. Repeatedly encountered the gap between laboratory signal identification and field-scale measurement. Founded EndoBio to close it.</p>
                 </div>
                 <a
                   href="/#/founder"
@@ -212,44 +199,12 @@ export default function ForInvestors() {
         </div>
       </div>
 
-      {/* Why EndoBio wins */}
-      <div className="py-20 bg-gray-50">
-        <div className="mx-auto max-w-4xl px-6 lg:px-8">
-          <h2 className="text-3xl font-bold text-gray-900 mb-12">Why EndoBio Wins</h2>
-          <div className="space-y-6">
-            {[
-              {
-                title: 'Defensible Moat',
-                body: 'Early detection built on proprietary data, real-world farm networks, and continuous model improvement. Requires deployed hardware, real-time field data, and years of learning — not replicable by software-only plays.',
-              },
-              {
-                title: 'Integrated Platform',
-                body: 'EndoBio vertically integrates discovery, sensing, and inference. This creates switching costs and defensibility that point solutions cannot match.',
-              },
-              {
-                title: 'Clear ROI for Customers',
-                body: 'A single prevented disease event pays for years of service. The business case is immediate — farmers see returns before the season is over.',
-              },
-              {
-                title: 'Expansion Path',
-                body: 'Start with disease detection. Expand to broader crop health monitoring and yield optimization. Each farm becomes a long-term intelligence asset.',
-              },
-            ].map((item) => (
-              <div key={item.title} className="rounded-lg bg-white p-8 ring-1 ring-gray-200">
-                <h3 className="text-xl font-semibold text-gray-900 mb-3">{item.title}</h3>
-                <p className="text-gray-700">{item.body}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </div>
-
       {/* CTA */}
-      <div className="py-20 bg-white">
+      <div className="py-20 bg-gray-50">
         <div className="mx-auto max-w-4xl px-6 lg:px-8 text-center">
           <h2 className="text-3xl font-bold text-gray-900 mb-4">Let's talk</h2>
           <p className="text-lg text-gray-700 mb-10">
-            We're building the molecular sensing layer for modern agriculture. If you see the opportunity, we'd like to hear from you.
+            If you see the opportunity, we'd like to hear from you.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a

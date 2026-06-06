@@ -5,12 +5,11 @@ import Header from './components/Header';
 import Footer from './components/Footer';
 import Hero from './components/Hero';
 import MetricsSection from './components/MetricsSection';
-import Problem from './components/Problem';
-import Platform from './components/Platform';
-import CurrentProgress from './components/CurrentProgress';
-import WhyNow from './components/WhyNow';
-import Roadmap from './components/Roadmap';
-import WhyItMatters from './components/Difference';
+import BiologicalLoop from './components/Platform';
+import DetectionWindow from './components/Problem';
+import TechDevelopment from './components/CurrentProgress';
+import FocusAreas from './components/FocusAreas';
+import ProgressSection from './components/ProgressSection';
 import FounderSection from './components/FounderSection';
 import TrustBar from './components/TrustBar';
 import CTA from './components/Vision';
@@ -21,13 +20,12 @@ import Founder from './pages/Founder';
 const HomePage = () => (
   <main>
     <Hero />
+    <BiologicalLoop />
+    <DetectionWindow />
     <MetricsSection />
-    <Problem />
-    <Platform />
-    <CurrentProgress />
-    <WhyNow />
-    <Roadmap />
-    <WhyItMatters />
+    <TechDevelopment />
+    <FocusAreas />
+    <ProgressSection />
     <FounderSection />
     <TrustBar />
     <CTA />
