@@ -1,50 +1,59 @@
-export default function Problem() {
+export default function DetectionWindow() {
   return (
-    <div className="py-24 sm:py-32 bg-white">
+    <div className="py-24 sm:py-32 bg-gray-50">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-3xl">
-          <h2 className="text-4xl font-bold tracking-tight text-gray-900 mb-8">
-            The Challenge
+          <h2 className="text-4xl font-bold tracking-tight text-gray-900 mb-4">
+            The Most Valuable Detection Window Is Invisible
           </h2>
+          <p className="text-lg text-gray-600 mb-12">
+            By the time visible symptoms appear, yield losses are often already underway.
+          </p>
 
-          <div className="space-y-8">
-            <div>
-              <h3 className="text-2xl font-semibold text-gray-900 mb-4">
-                Disease Goes Undetected
-              </h3>
-              <p className="text-lg text-gray-700">
-                Root rot, fungal infections, pathogen proliferation — they're happening in your soil long before you can see them. Weeks of undetected disease means weeks of crop damage.
-              </p>
+          <div className="space-y-6 text-gray-700 leading-7 mb-14">
+            <p>
+              Most agricultural monitoring systems detect problems only after plants begin exhibiting visible signs of stress or disease.
+            </p>
+            <p>
+              But biological signals emerge long before visible symptoms appear.
+            </p>
+            <div className="pl-6 border-l-2 border-[#4caf50] space-y-2 text-gray-600 italic">
+              <p>Pathogens communicate.</p>
+              <p>Plants respond.</p>
+              <p>Metabolic pathways shift.</p>
+              <p>Chemical signals accumulate.</p>
             </div>
+            <p>
+              These biological changes create an early detection window that remains largely invisible to today's agricultural technologies. EndoBio is designed to operate inside that window.
+            </p>
+          </div>
 
-            <div className="rounded-lg bg-red-50 p-6 border-l-4 border-red-500">
-              <p className="text-gray-900 font-semibold mb-2">
-                By the time visible symptoms appear...
-              </p>
-              <ul className="space-y-2">
-                <li className="text-gray-700">• Pathogen activity has been underway for weeks</li>
-                <li className="text-gray-700">• Root systems may already be compromised</li>
-                <li className="text-gray-700">• Crop yield loss becomes significant</li>
-                <li className="text-gray-700">• Treatment options are limited</li>
-              </ul>
-            </div>
-
-            <div>
-              <h3 className="text-2xl font-semibold text-gray-900 mb-4">
-                Current Monitoring is Too Late
-              </h3>
-              <p className="text-lg text-gray-700">
-                Traditional agriculture monitors what's obvious: soil moisture, temperature, pH, nutrients. These are useful signals, but they're indirect. They don't tell you that disease is already happening.
-              </p>
-            </div>
-
-            <div className="rounded-lg bg-green-50 p-6 border-l-4 border-[#4caf50]">
-              <p className="text-gray-900 font-semibold mb-2">
-                There's an earlier signal layer.
-              </p>
-              <p className="text-gray-700">
-                Biology changes first. Microbes shift, plants respond, metabolites appear — all before you see a single leaf symptom. That's the signal EndoBio detects.
-              </p>
+          {/* Timeline */}
+          <div className="relative">
+            <div className="absolute left-5 top-0 bottom-0 w-0.5 bg-gray-200" />
+            <div className="space-y-0">
+              {[
+                { label: 'Infection', sublabel: 'Pathogen enters the root zone', highlight: false },
+                { label: 'Biological Signals Emerge', sublabel: 'Metabolic shifts, molecular markers detectable', highlight: true },
+                { label: 'Visible Symptoms', sublabel: 'Yellowing, wilting, lesions appear', highlight: false },
+                { label: 'Yield Loss', sublabel: 'Damage is largely irreversible', highlight: false },
+              ].map((step, i) => (
+                <div key={i} className="relative flex items-start gap-6 pb-10 last:pb-0">
+                  <div className={`relative z-10 flex-shrink-0 h-10 w-10 rounded-full flex items-center justify-center ${step.highlight ? 'bg-[#4caf50] ring-4 ring-[#4caf50]/20' : 'bg-white ring-2 ring-gray-300'}`}>
+                    {step.highlight
+                      ? <span className="text-white text-xs font-bold">★</span>
+                      : <span className="text-gray-400 text-sm font-bold">{i + 1}</span>
+                    }
+                  </div>
+                  <div className={`pt-1.5 rounded-lg px-4 py-3 flex-1 ${step.highlight ? 'bg-[#4caf50]/10 ring-1 ring-[#4caf50]/30' : ''}`}>
+                    <p className={`font-semibold ${step.highlight ? 'text-[#4caf50]' : 'text-gray-900'}`}>
+                      {step.label}
+                      {step.highlight && <span className="ml-2 text-xs font-bold uppercase tracking-widest bg-[#4caf50] text-white px-2 py-0.5 rounded">EndoBio Detection Zone</span>}
+                    </p>
+                    <p className="text-sm text-gray-600 mt-0.5">{step.sublabel}</p>
+                  </div>
+                </div>
+              ))}
             </div>
           </div>
         </div>

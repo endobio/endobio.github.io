@@ -1,38 +1,32 @@
-export default function CurrentProgress() {
+export default function TechDevelopment() {
+  const areas = [
+    'Agricultural disease intelligence platform',
+    'Knowledge graph infrastructure',
+    'Biomarker discovery workflows',
+    'Electrochemical sensing systems',
+    'Root-zone sampling hardware',
+    'Adaptive sensor network architecture',
+  ]
+
   return (
     <div className="py-24 sm:py-32 bg-white">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-3xl">
           <h2 className="text-4xl font-bold tracking-tight text-gray-900 mb-4">
-            Current Progress
+            Technology Development
           </h2>
-          <p className="text-lg text-gray-600 mb-12">
-            Technology development is underway. Here's where we are.
+          <p className="text-lg text-gray-600 mb-6">
+            Building the foundation for field-scale biological intelligence.
+          </p>
+          <p className="text-gray-700 leading-7 mb-10">
+            EndoBio combines advances in biological discovery, molecular sensing, edge computing, and artificial intelligence. Current development spans the full technology stack — from knowledge infrastructure to physical hardware.
           </p>
 
-          <div className="space-y-3 mb-10">
-            {[
-              'Agricultural disease intelligence platform operational',
-              'Global disease surveillance and literature mining pipeline developed',
-              'Knowledge graph for pathogen, crop, and biomarker discovery',
-              'AI-guided target identification workflows',
-              'Prototype electrochemical sensing platform completed',
-            ].map((item) => (
-              <div key={item} className="flex items-start gap-3">
-                <span className="mt-0.5 flex-shrink-0 text-[#4caf50] font-bold text-lg">✓</span>
-                <p className="text-gray-800">{item}</p>
-              </div>
-            ))}
-          </div>
-
-          <div className="border-t border-gray-200 pt-8 space-y-3">
-            {[
-              'Greenhouse validation in development',
-              'Pilot partner discussions underway',
-            ].map((item) => (
-              <div key={item} className="flex items-start gap-3">
-                <span className="mt-0.5 flex-shrink-0 text-[#4caf50] font-bold text-lg">→</span>
-                <p className="text-gray-600 italic">{item}</p>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            {areas.map((area) => (
+              <div key={area} className="flex items-start gap-3 rounded-lg bg-gray-50 p-5 ring-1 ring-gray-200">
+                <span className="mt-0.5 flex-shrink-0 text-[#4caf50] font-bold">✓</span>
+                <p className="text-gray-800 text-sm font-medium">{area}</p>
               </div>
             ))}
           </div>
