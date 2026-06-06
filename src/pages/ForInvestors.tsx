@@ -196,8 +196,8 @@ export default function ForInvestors() {
                 <h3 className="text-xl font-bold text-gray-900 mb-1">Keshav Dial</h3>
                 <p className="text-[#4caf50] font-semibold mb-4">Founder & CEO</p>
                 <div className="space-y-3 text-gray-700 text-sm leading-7">
-                  <p>PhD in Biochemistry. Career at the intersection of machine learning, bioinformatics, and scientific instrumentation.</p>
-                  <p>Built genomic mining, metabolomics, and biological discovery platforms supporting agricultural research at Indigo Ag, Corteva Agriscience, and Bayer Crop Science. Led development of enterprise AI systems and agentic infrastructure at Sanofi.</p>
+                  <p>PhD in Biochemistry. Career at the intersection of machine learning, bioinformatics, and biological discovery.</p>
+                  <p>Built genomic and metabolomic discovery platforms for agricultural R&D at Indigo Ag, Corteva Agriscience, and Bayer Crop Science. At Sanofi, designed and shipped multiple end-to-end AI systems — including the proof of concept for <span className="font-semibold text-gray-900">Sanofi Concierge</span>, the company's globally deployed internal AI assistant — and architected a biomedical knowledge graph platform with graph-based RAG prior to mainstream adoption.</p>
                 </div>
                 <a
                   href="/#/founder"
