@@ -1,19 +1,64 @@
 'use client'
 
-import { useState } from 'react'
+import { useEffect, useState, type MouseEvent } from 'react'
 import posthog from '../../lib/posthog'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 import { authActions, logo, mainNavItems, primaryActions } from './config'
+
+const pendingSectionKey = 'endobio-pending-section'
 
 export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
   const links = mainNavItems.filter((item) => item.type === 'link' && item.href)
 
+  const scrollToSection = (href?: string) => {
+    if (!href) return
+
+    if (href === '#') {
+      window.scrollTo({ top: 0, behavior: 'smooth' })
+      return
+    }
+
+    if (href.startsWith('#/') || href.startsWith('/#/')) {
+      window.location.href = href
+      return
+    }
+
+    const id = href.replace('#', '')
+    const el = document.getElementById(id)
+
+    if (el) {
+      const top = el.getBoundingClientRect().top + window.scrollY - 64
+      window.scrollTo({ top, behavior: 'smooth' })
+      return
+    }
+
+    sessionStorage.setItem(pendingSectionKey, id)
+    window.location.href = '/#/'
+  }
+
+  const handleSectionClick = (event: MouseEvent<HTMLAnchorElement>, href?: string) => {
+    if (!href?.startsWith('#') || href.startsWith('#/')) return
+
+    event.preventDefault()
+    scrollToSection(href)
+  }
+
+  useEffect(() => {
+    const pendingSection = sessionStorage.getItem(pendingSectionKey)
+    if (!pendingSection) return
+
+    sessionStorage.removeItem(pendingSectionKey)
+    window.setTimeout(() => {
+      scrollToSection(`#${pendingSection}`)
+    }, 0)
+  }, [])
+
   return (
     <header className="fixed inset-x-0 top-0 z-50 border-b border-black/5 bg-white/75 backdrop-blur-xl">
       <nav aria-label="Global" className="mx-auto flex h-14 max-w-6xl items-center justify-between px-5 lg:px-6">
-        <a href={logo.href} className="flex items-center">
+        <a href={logo.href} className="flex items-center" onClick={(event) => handleSectionClick(event, logo.href)}>
           <span className="sr-only">{logo.alt}</span>
           <img alt="" src={logo.src} className="h-7 w-auto" />
         </a>
@@ -23,6 +68,7 @@ export default function Header() {
             <a
               key={item.name}
               href={item.href}
+              onClick={(event) => handleSectionClick(event, item.href)}
               className="text-[13px] font-medium text-[#1d1d1f]/70 transition-colors hover:text-[#1d1d1f]"
             >
               {item.name}
@@ -82,7 +128,10 @@ export default function Header() {
                 <a
                   key={item.name}
                   href={item.href}
-                  onClick={() => setMobileMenuOpen(false)}
+                  onClick={(event) => {
+                    handleSectionClick(event, item.href)
+                    setMobileMenuOpen(false)
+                  }}
                   className="block rounded-xl px-3 py-3 text-lg font-semibold text-[#1d1d1f] hover:bg-[#f5f5f7]"
                 >
                   {item.name}
