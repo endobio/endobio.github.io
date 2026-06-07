@@ -6,7 +6,7 @@ const callouts = [
 
 export default function SensorSection() {
   return (
-    <section className="overflow-hidden bg-[#f5f5f7] py-24 sm:py-32">
+    <section className="overflow-hidden bg-white py-24 sm:py-32">
       <div className="mx-auto grid max-w-7xl items-center gap-12 px-6 lg:grid-cols-2 lg:gap-16 lg:px-8">
         <div>
           <p className="mb-4 text-xs font-semibold uppercase tracking-widest text-[#4caf50]">
@@ -31,15 +31,12 @@ export default function SensorSection() {
           </div>
         </div>
 
-        <div className="relative min-h-[520px] overflow-hidden rounded-[28px] bg-[#0c180f] ring-1 ring-black/5 sm:min-h-[680px] lg:min-h-[760px]">
+        <div className="relative min-h-[560px] overflow-hidden border-x border-[#eeeeee] bg-white sm:min-h-[720px] lg:min-h-[820px]">
           <img
             src="/new-sensor.avif"
             alt="EndoBio sensor buried beside soybean roots in the root zone."
-            className="absolute inset-0 h-full w-full object-cover"
+            className="absolute inset-0 h-full w-full object-cover object-[62%_54%] lg:object-[60%_54%]"
           />
-          <div className="pointer-events-none absolute inset-y-0 left-0 w-14 bg-gradient-to-r from-[#f5f5f7]/65 to-transparent" />
-          <div className="pointer-events-none absolute inset-y-0 right-0 w-14 bg-gradient-to-l from-[#f5f5f7]/45 to-transparent" />
-          <div className="pointer-events-none absolute inset-x-0 bottom-0 h-16 bg-gradient-to-t from-[#f5f5f7]/55 to-transparent" />
         </div>
       </div>
     </section>
