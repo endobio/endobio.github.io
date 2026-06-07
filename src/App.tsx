@@ -7,6 +7,7 @@ import Hero from './components/Hero';
 import MetricsSection from './components/MetricsSection';
 import BiologicalLoop from './components/Platform';
 import DetectionWindow from './components/Problem';
+import SensorSection from './components/SensorSection';
 import TechDevelopment from './components/CurrentProgress';
 import FocusAreas from './components/FocusAreas';
 import ProgressSection from './components/ProgressSection';
@@ -24,6 +25,7 @@ const HomePage = () => (
     <ProductShowcase />
     <BiologicalLoop />
     <DetectionWindow />
+    <SensorSection />
     <MetricsSection />
     <TechDevelopment />
     <FocusAreas />
