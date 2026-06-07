@@ -30,14 +30,14 @@ export default function Hero() {
           <div className="mt-12 flex flex-col sm:flex-row items-center justify-center gap-x-6 gap-y-4">
             <a
               href="/#/farmers"
-              className="rounded-md bg-[#4caf50] px-8 py-3 text-sm font-semibold text-white shadow-sm hover:bg-[#45a049] transition-colors"
-              onClick={() => posthog.capture('hero_cta_clicked', { cta_type: 'farmers', location: 'hero' })}
+              className="rounded-full bg-[#4caf50] px-8 py-3 text-sm font-semibold text-white shadow-sm hover:bg-[#45a049] transition-colors"
+              onClick={() => posthog.capture('hero_cta_clicked', { cta_type: 'pilot', location: 'hero' })}
             >
-              For Farmers
+              Join Pilot Program
             </a>
             <a
               href="/#/investors"
-              className="rounded-md bg-gray-100 px-8 py-3 text-sm font-semibold text-gray-900 hover:bg-gray-200 transition-colors"
+              className="rounded-full bg-gray-100 px-8 py-3 text-sm font-semibold text-gray-900 hover:bg-gray-200 transition-colors"
               onClick={() => posthog.capture('hero_cta_clicked', { cta_type: 'investors', location: 'hero' })}
             >
               For Investors
