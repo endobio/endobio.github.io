@@ -67,7 +67,7 @@ export const authActions: CallToAction[] = [
 ]
 
 export const primaryActions: CallToAction[] = [
-  { name: 'Get started', href: '#' },
+  { name: 'Join Pilot', href: '#' },
 ]
 
 export const logo = {
@@ -84,17 +84,17 @@ export const mainNavItems: NavItem[] = [
     callsToAction: platformCTA,
   },
   {
-    name: 'For Farmers',
+    name: 'Detection Window',
     type: 'link',
-    href: '#',
+    href: '#detection',
   },
   {
-    name: 'Research',
+    name: 'Progress',
     type: 'link',
-    href: '#',
+    href: '#progress',
   },
   {
-    name: 'About',
+    name: 'Founder',
     type: 'link',
     href: '#/founder',
   },
