@@ -31,11 +31,11 @@ export default function SensorSection() {
           </div>
         </div>
 
-        <div className="relative min-h-[560px] overflow-hidden border-x border-[#eeeeee] bg-white sm:min-h-[720px] lg:min-h-[820px]">
+        <div className="border-x border-[#eeeeee] bg-white">
           <img
             src="/new-sensor.avif"
             alt="EndoBio sensor buried beside soybean roots in the root zone."
-            className="absolute inset-0 h-full w-full object-cover object-[62%_54%] lg:object-[60%_54%]"
+            className="block h-auto w-full"
           />
         </div>
       </div>
