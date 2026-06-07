@@ -4,7 +4,7 @@ export default function Footer() {
   return (
     <footer
       className="text-white"
-      style={{ background: 'linear-gradient(180deg, #111b11 0%, #0d160d 100%)' }}
+      style={{ background: 'linear-gradient(180deg, #0f1f12 0%, #071108 100%)' }}
     >
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         {/* Top section */}

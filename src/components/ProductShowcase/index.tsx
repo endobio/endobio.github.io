@@ -153,8 +153,9 @@ export default function ProductShowcase() {
 
   return (
     <section
+      id="platform"
       className="py-24 sm:py-32 overflow-hidden"
-      style={{ background: 'linear-gradient(180deg, #fafffe 0%, #f0faf0 40%, #fafffe 100%)' }}
+      style={{ background: 'linear-gradient(180deg, #ffffff 0%, #f5f5f7 44%, #ffffff 100%)' }}
     >
       {/* Section header */}
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
@@ -167,10 +168,7 @@ export default function ProductShowcase() {
             transition: 'opacity 0.6s ease, transform 0.6s ease',
           }}
         >
-          <p
-            className="text-xs font-semibold uppercase tracking-widest mb-4"
-            style={{ color: '#4caf50' }}
-          >
+          <p className="text-xs font-semibold uppercase tracking-widest mb-4 text-[#4caf50]">
             The Platform
           </p>
 
@@ -190,8 +188,8 @@ export default function ProductShowcase() {
             ))}
           </div>
 
-          <p className="text-lg text-gray-500 max-w-xl mx-auto">
-            From biological discovery to field-scale detection and real-world action.
+          <p className="text-lg text-[#6e6e73] max-w-xl mx-auto">
+            Turn biological signals into actionable intelligence.
           </p>
         </div>
 
@@ -202,8 +200,8 @@ export default function ProductShowcase() {
           <FeatureRow
             step="01"
             label="Discover"
-            headline="The intelligence layer powering the platform."
-            body="EndoBio continuously analyzes disease reports, scientific literature, genomic data, and biological signals to identify emerging threats and prioritize new sensing targets."
+            headline="Biological intelligence before deployment."
+            body="EndoBio mines historical disease reports, literature, genomics, and biomarker data to identify emerging threats and prioritize sensing targets for each region."
             bullets={[
               'Regional disease intelligence from aggregated field data',
               'Knowledge graph connecting pathogens, biomarkers, and intervention windows',
@@ -218,7 +216,7 @@ export default function ProductShowcase() {
           <FeatureRow
             step="02"
             label="Detect"
-            headline="Biological signals, weeks before symptoms."
+            headline="Field-scale molecular sensing."
             body="Buried molecular sensors monitor biological signals beneath the soil surface, revealing disease activity before visible symptoms emerge — while intervention is still effective."
             bullets={[
               'Root-zone molecular sensing across the field grid',
@@ -235,7 +233,7 @@ export default function ProductShowcase() {
           <FeatureRow
             step="03"
             label="Respond"
-            headline="Decisions grounded in field biology."
+            headline="Adaptive agricultural action."
             body="EndoBio transforms field observations into actionable recommendations, helping growers intervene earlier and respond with confidence — before yield loss becomes irreversible."
             bullets={[
               'Prioritized intervention steps: Confirm, Treat, Prevent',
@@ -248,23 +246,6 @@ export default function ProductShowcase() {
           />
 
         </div>
-      </div>
-
-      {/* Full-width composite — visible until individual shots are added */}
-      <div className="mt-32 mx-auto max-w-7xl px-6 lg:px-8">
-        <div
-          className="rounded-3xl overflow-hidden ring-1 ring-gray-200/60"
-          style={{ boxShadow: '0 24px 80px rgba(76,175,80,0.08), 0 4px 20px rgba(0,0,0,0.06)' }}
-        >
-          <img
-            src="/screenshots/composite.png"
-            alt="EndoBio platform — Discovery, Detection, and Response screens"
-            className="w-full h-auto"
-          />
-        </div>
-        <p className="text-center text-xs text-gray-400 mt-4">
-          EndoBio biological intelligence platform — Discover · Detect · Respond
-        </p>
       </div>
     </section>
   )

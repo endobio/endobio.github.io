@@ -44,7 +44,7 @@ export const platformPillars: Product[] = [
     icon: SparklesIcon
   },
   {
-    name: 'Electrochemical Biosensing',
+    name: 'Molecular Biosensing',
     description: 'Scalable detection of metabolites and microbial signals directly in-field',
     href: '#',
     icon: CloudIcon
@@ -67,7 +67,7 @@ export const authActions: CallToAction[] = [
 ]
 
 export const primaryActions: CallToAction[] = [
-  { name: 'Join Pilot', href: '#' },
+  { name: 'Join Pilot', href: '/#/farmers' },
 ]
 
 export const logo = {
@@ -79,7 +79,8 @@ export const logo = {
 export const mainNavItems: NavItem[] = [
   {
     name: 'Platform',
-    type: 'dropdown',
+    type: 'link',
+    href: '#platform',
     items: platformPillars,
     callsToAction: platformCTA,
   },

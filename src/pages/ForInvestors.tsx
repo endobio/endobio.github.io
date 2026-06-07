@@ -30,7 +30,7 @@ const stackLayers = [
     icon: SignalIcon,
     layer: 'Layer 2',
     title: 'Molecular Sensing',
-    body: 'Custom electrochemical sensors designed from the knowledge graph up — detecting root-zone biomarkers at field scale, continuously.',
+    body: 'Custom molecular sensors designed from the knowledge graph up — detecting root-zone biomarkers at field scale, continuously.',
   },
   {
     icon: CpuChipIcon,
@@ -44,7 +44,7 @@ const completed = [
   'Agricultural disease intelligence platform',
   'Knowledge graph infrastructure',
   'Biomarker discovery workflows',
-  'Electrochemical sensing prototype',
+  'Molecular sensing prototype',
   'Root-zone sampling architecture',
   'Global disease surveillance ingestion',
 ]

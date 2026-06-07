@@ -19,27 +19,32 @@ const diseases = [
 
 export default function FocusAreas() {
   return (
-    <div className="py-24 sm:py-32 bg-gray-50">
+    <div className="py-24 sm:py-32 bg-[#f5f5f7]">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-3xl">
-          <h2 className="text-4xl font-bold tracking-tight text-gray-900 mb-4">
+          <p className="text-xs font-semibold uppercase tracking-widest mb-4 text-[#4caf50]">
+            Initial disease systems
+          </p>
+          <h2 className="text-4xl font-bold tracking-tight text-[#1d1d1f] mb-4">
             Initial Focus Areas
           </h2>
-          <p className="text-lg text-gray-600 mb-12">
+          <p className="text-lg text-[#6e6e73] mb-12">
             Beginning with diseases where earlier detection creates significant economic value.
           </p>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-10">
+          <div className="grid grid-cols-1 gap-px overflow-hidden rounded-3xl bg-[#e5e5e5] sm:grid-cols-2 mb-10">
             {diseases.map((d) => (
-              <div key={d.name} className="rounded-xl bg-white p-7 ring-1 ring-gray-200">
-                <div className="h-1 w-10 bg-[#4caf50] rounded mb-5" />
-                <h3 className="font-semibold text-gray-900 mb-2">{d.name}</h3>
-                <p className="text-sm text-gray-600 leading-6">{d.description}</p>
+              <div key={d.name} className="bg-white p-7">
+                <div className="h-9 w-9 rounded-xl bg-[#f0faf0] mb-5 flex items-center justify-center">
+                  <span className="h-2.5 w-2.5 rounded-full bg-[#4caf50]" />
+                </div>
+                <h3 className="font-semibold text-[#1d1d1f] mb-2">{d.name}</h3>
+                <p className="text-sm text-[#6e6e73] leading-6">{d.description}</p>
               </div>
             ))}
           </div>
 
-          <p className="text-sm text-gray-500 italic">
+          <p className="text-sm text-[#6e6e73]">
             Our platform is designed to expand beyond individual diseases and ultimately support a broad range of biological monitoring applications.
           </p>
         </div>
