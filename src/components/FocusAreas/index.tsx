@@ -19,7 +19,7 @@ const diseases = [
 
 export default function FocusAreas() {
   return (
-    <div className="py-24 sm:py-32 bg-[#f5f5f7]">
+    <div className="bg-[#f5f5f7] pb-12 pt-24 sm:pb-16 sm:pt-32">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-3xl">
           <p className="text-xs font-semibold uppercase tracking-widest mb-4 text-[#4caf50]">

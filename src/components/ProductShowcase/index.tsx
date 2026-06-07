@@ -33,23 +33,33 @@ function PhoneFrame({
 }) {
   return (
     <div
-      className="relative group"
+      className="relative"
       style={{
         opacity: visible ? 1 : 0,
         transform: visible ? 'translateY(0) scale(1)' : 'translateY(32px) scale(0.97)',
         transition: `opacity 0.7s ease ${delay}ms, transform 0.7s ease ${delay}ms`,
+        backfaceVisibility: 'hidden',
+        WebkitBackfaceVisibility: 'hidden',
       }}
     >
       {/* Glow behind phone */}
       <div
-        className="absolute inset-0 -z-10 blur-3xl opacity-20 group-hover:opacity-30 transition-opacity duration-500"
+        className="absolute inset-0 -z-10 blur-3xl opacity-20"
         style={{ background: 'radial-gradient(ellipse at center, #4caf50 0%, transparent 70%)' }}
       />
+      <div className="absolute inset-x-8 bottom-4 z-0 h-24 rounded-full bg-black/10 blur-3xl" />
       <img
         src={src}
         alt={alt}
-        className="relative z-10 mx-auto drop-shadow-2xl group-hover:-translate-y-2 transition-transform duration-500 ease-out"
-        style={{ maxHeight: 620, width: 'auto' }}
+        className="relative z-10 mx-auto block"
+        style={{
+          maxHeight: 'min(620px, 72vh)',
+          width: 'auto',
+          maxWidth: '100%',
+          transform: 'translateZ(0)',
+          backfaceVisibility: 'hidden',
+          WebkitBackfaceVisibility: 'hidden',
+        }}
       />
     </div>
   )
@@ -130,18 +140,9 @@ function FeatureRow({
   )
 
   return (
-    <div ref={ref} className="grid lg:grid-cols-2 gap-16 lg:gap-24 items-center">
-      {reverse ? (
-        <>
-          {imageCol}
-          {textCol}
-        </>
-      ) : (
-        <>
-          {textCol}
-          {imageCol}
-        </>
-      )}
+    <div ref={ref} className="flex flex-col gap-8 lg:grid lg:grid-cols-2 lg:gap-24 lg:items-center">
+      <div className={reverse ? 'lg:order-2' : ''}>{textCol}</div>
+      <div className={reverse ? 'lg:order-1' : ''}>{imageCol}</div>
     </div>
   )
 }
@@ -161,7 +162,7 @@ export default function ProductShowcase() {
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div
           ref={headerReveal.ref}
-          className="text-center mb-24"
+          className="text-center mb-16 sm:mb-20 lg:mb-24"
           style={{
             opacity: headerReveal.visible ? 1 : 0,
             transform: headerReveal.visible ? 'translateY(0)' : 'translateY(20px)',
@@ -194,7 +195,7 @@ export default function ProductShowcase() {
         </div>
 
         {/* Feature rows */}
-        <div className="space-y-32">
+        <div className="space-y-16 sm:space-y-20 lg:space-y-32">
 
           {/* DISCOVER */}
           <FeatureRow

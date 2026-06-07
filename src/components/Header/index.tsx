@@ -110,40 +110,45 @@ export default function Header() {
       </nav>
 
       {mobileMenuOpen && (
-        <div className="fixed inset-0 z-50 bg-white md:hidden">
-          <div className="flex h-14 items-center justify-between border-b border-black/5 px-5">
-            <img alt="" src={logo.src} className="h-7 w-auto" />
-            <button
-              type="button"
-              onClick={() => setMobileMenuOpen(false)}
-              className="inline-flex h-9 w-9 items-center justify-center rounded-full text-[#1d1d1f] hover:bg-black/5"
-            >
-              <span className="sr-only">Close menu</span>
-              <XMarkIcon aria-hidden="true" className="h-5 w-5" />
-            </button>
-          </div>
-          <div className="px-5 py-6">
-            <div className="space-y-1">
-              {links.map((item) => (
-                <a
-                  key={item.name}
-                  href={item.href}
-                  onClick={(event) => {
-                    handleSectionClick(event, item.href)
-                    setMobileMenuOpen(false)
-                  }}
-                  className="block rounded-xl px-3 py-3 text-lg font-semibold text-[#1d1d1f] hover:bg-[#f5f5f7]"
-                >
-                  {item.name}
-                </a>
-              ))}
-              <a
-                href="/#/farmers"
+        <div className="fixed inset-0 z-50 bg-black/20 backdrop-blur-[1px] md:hidden">
+          <div
+            className="absolute inset-x-3 top-3 border border-[#eaeaea] bg-white/[0.98] shadow-2xl"
+            style={{ boxShadow: '0 28px 90px rgba(0,0,0,0.22), 0 8px 24px rgba(0,0,0,0.12)' }}
+          >
+            <div className="flex h-14 items-center justify-between border-b border-[#eaeaea] px-5">
+              <img alt="" src={logo.src} className="h-7 w-auto" />
+              <button
+                type="button"
                 onClick={() => setMobileMenuOpen(false)}
-                className="mt-5 block rounded-full bg-[#4caf50] px-5 py-3 text-center text-sm font-semibold text-white"
+                className="inline-flex h-9 w-9 items-center justify-center rounded-full text-[#1d1d1f] hover:bg-black/5"
               >
-                Join Pilot
-              </a>
+                <span className="sr-only">Close menu</span>
+                <XMarkIcon aria-hidden="true" className="h-5 w-5" />
+              </button>
+            </div>
+            <div className="px-5 py-6">
+              <div className="space-y-1">
+                {links.map((item) => (
+                  <a
+                    key={item.name}
+                    href={item.href}
+                    onClick={(event) => {
+                      handleSectionClick(event, item.href)
+                      setMobileMenuOpen(false)
+                    }}
+                    className="block rounded-xl px-3 py-3 text-lg font-semibold text-[#1d1d1f] hover:bg-[#f5f5f7]"
+                  >
+                    {item.name}
+                  </a>
+                ))}
+                <a
+                  href="/#/farmers"
+                  onClick={() => setMobileMenuOpen(false)}
+                  className="mt-5 block rounded-full bg-[#4caf50] px-5 py-3 text-center text-sm font-semibold text-white"
+                >
+                  Join Pilot
+                </a>
+              </div>
             </div>
           </div>
         </div>

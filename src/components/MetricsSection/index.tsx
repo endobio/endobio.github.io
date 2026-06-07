@@ -11,7 +11,7 @@ export default function MetricsSection() {
       description: 'in a dry year'
     },
     {
-      value: '$4-5B+',
+      value: '$4–5B+',
       label: 'economic impact',
       description: 'in severe disease years'
     }
@@ -21,15 +21,9 @@ export default function MetricsSection() {
     <div className="relative isolate bg-[#f5f5f7] py-24 sm:py-32 lg:py-36">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="text-center mb-16">
-          <p className="mb-4 text-xs font-semibold uppercase tracking-widest text-[#4caf50]">
-            Current treatments fail late
-          </p>
           <h2 className="text-4xl font-bold tracking-tight text-[#1d1d1f] sm:text-5xl">
-            The Scale of the Problem
+            Why We Started With Soybeans
           </h2>
-          <p className="mt-4 text-lg leading-8 text-[#6e6e73]">
-            Current solutions fail because we only see the damage after disease strikes
-          </p>
         </div>
 
         <div className="grid grid-cols-1 overflow-hidden rounded-3xl bg-white ring-1 ring-black/5 sm:grid-cols-3">
@@ -52,9 +46,11 @@ export default function MetricsSection() {
           ))}
         </div>
 
-        <div className="mt-16 border-t border-gray-200 pt-12">
-          <p className="text-center text-sm text-gray-600">
-            Based on 2024 Crop Protection Network (CPN) survey data and soybean price assumptions of ~$10.50/bu
+        <div className="mx-auto mt-12 max-w-3xl">
+          <p className="text-center text-lg leading-8 text-[#6e6e73]">
+            Soybean disease represents one of the largest unmet opportunities in agriculture.
+            EndoBio begins with soybean pathogens and stressors before expanding to additional
+            crops and biological threats.
           </p>
         </div>
       </div>

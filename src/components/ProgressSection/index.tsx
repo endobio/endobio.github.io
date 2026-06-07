@@ -1,6 +1,6 @@
 export default function ProgressSection() {
   return (
-    <div className="py-24 sm:py-32 bg-[#f5f5f7]">
+    <div className="bg-[#f5f5f7] pb-24 pt-12 sm:pb-32 sm:pt-16">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-3xl">
           <p className="text-xs font-semibold uppercase tracking-widest mb-4 text-[#4caf50]">
