@@ -1,111 +1,120 @@
 export default function Footer() {
-  const currentYear = new Date().getFullYear();
+  const currentYear = new Date().getFullYear()
 
   return (
-    <footer className="bg-gray-900 text-white">
-      <div className="mx-auto max-w-7xl px-6 py-12 lg:px-8">
-        <div className="grid grid-cols-1 gap-12 sm:grid-cols-2 lg:grid-cols-4 lg:gap-8">
-          {/* Company Info */}
-          <div>
-            <h3 className="text-sm font-semibold leading-6">EndoBio</h3>
-            <p className="mt-2 text-sm text-gray-400">
-              Turn biological signals into actionable intelligence.
+    <footer
+      className="text-white"
+      style={{ background: 'linear-gradient(180deg, #111b11 0%, #0d160d 100%)' }}
+    >
+      <div className="mx-auto max-w-7xl px-6 lg:px-8">
+        {/* Top section */}
+        <div className="py-14 grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-4 lg:gap-8 border-b border-white/8">
+
+          {/* Brand */}
+          <div className="lg:col-span-1">
+            <div className="flex items-center gap-2.5 mb-3">
+              <img src="/endobio-logo.svg" alt="EndoBio" className="h-7 w-auto" />
+              <span className="font-bold text-white text-base">EndoBio</span>
+            </div>
+            <p className="text-sm text-gray-400 leading-6 max-w-xs">
+              Biological intelligence platform for field-scale crop disease detection.
+            </p>
+            <p className="text-xs text-gray-600 mt-3">
+              Pre-Seed · Waterloo, Ontario
             </p>
           </div>
 
-          {/* Company Links */}
+          {/* Platform */}
           <div>
-            <h3 className="text-sm font-semibold leading-6">Company</h3>
-            <ul className="mt-6 space-y-4">
-              <li>
-                <a
-                  href="/#/"
-                  className="text-sm text-gray-400 hover:text-white transition-colors"
-                >
-                  Home
-                </a>
-              </li>
-              <li>
-                <a
-                  href="/#/farmers"
-                  className="text-sm text-gray-400 hover:text-white transition-colors"
-                >
-                  For Farmers
-                </a>
-              </li>
-              <li>
-                <a
-                  href="/#/investors"
-                  className="text-sm text-gray-400 hover:text-white transition-colors"
-                >
-                  For Investors
-                </a>
-              </li>
+            <h3 className="text-xs font-semibold uppercase tracking-widest text-gray-500 mb-5">
+              Platform
+            </h3>
+            <ul className="space-y-3">
+              {[
+                { label: 'Home', href: '/#/' },
+                { label: 'For Farmers', href: '/#/farmers' },
+                { label: 'For Investors', href: '/#/investors' },
+                { label: 'About the Founder', href: '/#/founder' },
+              ].map((link) => (
+                <li key={link.label}>
+                  <a
+                    href={link.href}
+                    className="text-sm text-gray-400 hover:text-white transition-colors"
+                  >
+                    {link.label}
+                  </a>
+                </li>
+              ))}
             </ul>
           </div>
 
-          {/* Legal Links */}
+          {/* Contact */}
           <div>
-            <h3 className="text-sm font-semibold leading-6">Legal</h3>
-            <ul className="mt-6 space-y-4">
-              <li>
-                <a
-                  href="#"
-                  className="text-sm text-gray-400 hover:text-white transition-colors"
-                >
-                  Privacy Policy
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  className="text-sm text-gray-400 hover:text-white transition-colors"
-                >
-                  Terms of Service
-                </a>
-              </li>
-            </ul>
-          </div>
-
-          {/* Contact & Social */}
-          <div>
-            <h3 className="text-sm font-semibold leading-6">Connect</h3>
-            <ul className="mt-6 space-y-4">
+            <h3 className="text-xs font-semibold uppercase tracking-widest text-gray-500 mb-5">
+              Contact
+            </h3>
+            <ul className="space-y-3">
               <li>
                 <a
                   href="mailto:keshav@endobio.ai?subject=General Inquiry"
                   className="text-sm text-gray-400 hover:text-white transition-colors"
                 >
-                  Contact
+                  keshav@endobio.ai
                 </a>
               </li>
               <li>
                 <a
-                  href="#"
+                  href="mailto:keshav@endobio.ai?subject=Interest: Pilot Program"
                   className="text-sm text-gray-400 hover:text-white transition-colors"
                 >
-                  LinkedIn
+                  Join Pilot Program
                 </a>
               </li>
               <li>
                 <a
-                  href="#"
+                  href="mailto:keshav@endobio.ai?subject=Investor Inquiry"
                   className="text-sm text-gray-400 hover:text-white transition-colors"
                 >
-                  Twitter
+                  Investor Inquiry
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          {/* Company */}
+          <div>
+            <h3 className="text-xs font-semibold uppercase tracking-widest text-gray-500 mb-5">
+              Company
+            </h3>
+            <ul className="space-y-3">
+              <li>
+                <span className="text-sm text-gray-600">Pre-Seed Stage</span>
+              </li>
+              <li>
+                <span className="text-sm text-gray-600">Waterloo, Ontario</span>
+              </li>
+              <li>
+                <a
+                  href="mailto:keshav@endobio.ai?subject=Media Inquiry"
+                  className="text-sm text-gray-400 hover:text-white transition-colors"
+                >
+                  Press & Media
                 </a>
               </li>
             </ul>
           </div>
         </div>
 
-        {/* Footer Bottom */}
-        <div className="border-t border-gray-800 mt-12 pt-8">
-          <p className="text-center text-sm text-gray-400">
+        {/* Bottom */}
+        <div className="py-6 flex flex-col sm:flex-row items-center justify-between gap-4">
+          <p className="text-xs text-gray-600">
             &copy; {currentYear} EndoBio. All rights reserved.
+          </p>
+          <p className="text-xs text-gray-700">
+            Field-scale biological intelligence for modern agriculture.
           </p>
         </div>
       </div>
     </footer>
-  );
+  )
 }
