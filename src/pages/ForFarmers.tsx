@@ -329,12 +329,12 @@ export default function ForFarmers() {
               {
                 name: 'Sudden Death Syndrome (SDS)',
                 body: 'Root infection begins before foliar symptoms. EndoBio targets root-zone fungal metabolites during the critical soil period.',
-                status: 'active' as const,
+                status: 'next' as const,
               },
               {
                 name: 'Phytophthora Root Rot',
                 body: 'Environmental signals and pathogen markers can indicate developing pressure before widespread root damage.',
-                status: 'done' as const,
+                status: 'next' as const,
               },
               {
                 name: 'White Mold',
