@@ -13,7 +13,7 @@ import ProgressSection from './components/ProgressSection';
 import FounderSection from './components/FounderSection';
 import TrustBar from './components/TrustBar';
 import CTA from './components/Vision';
-import PlatformShowcase from './components/PlatformShowcase';
+import ProductShowcase from './components/ProductShowcase';
 import ForFarmers from './pages/ForFarmers';
 import ForInvestors from './pages/ForInvestors';
 import Founder from './pages/Founder';
@@ -21,7 +21,7 @@ import Founder from './pages/Founder';
 const HomePage = () => (
   <main>
     <Hero />
-    <PlatformShowcase />
+    <ProductShowcase />
     <BiologicalLoop />
     <DetectionWindow />
     <MetricsSection />
