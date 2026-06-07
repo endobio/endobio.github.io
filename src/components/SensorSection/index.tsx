@@ -1,7 +1,7 @@
 const callouts = [
-  'Nematodes trigger molecular signatures around roots.',
-  'Molecules diffuse into soil water.',
-  'EndoBio detects those signatures before visible disease.',
+  'Nematodes and pathogens alter root-zone molecular signatures.',
+  'Those signals diffuse into soil water.',
+  'EndoBio detects them before visible disease emerges.',
 ]
 
 export default function SensorSection() {
@@ -16,7 +16,7 @@ export default function SensorSection() {
             The Sensor
           </h2>
           <p className="mt-5 max-w-xl text-xl leading-8 text-[#6e6e73]">
-            Buried in the root zone, listening before symptoms appear.
+            A buried molecular sensor that reads soil water for early biological stress signals.
           </p>
 
           <div className="mt-10 space-y-4">
@@ -31,15 +31,15 @@ export default function SensorSection() {
           </div>
         </div>
 
-        <div className="relative min-h-[420px] overflow-hidden rounded-[28px] bg-[#0c180f] ring-1 ring-black/5 sm:min-h-[560px]">
+        <div className="relative min-h-[520px] overflow-hidden rounded-[28px] bg-[#0c180f] ring-1 ring-black/5 sm:min-h-[680px] lg:min-h-[760px]">
           <img
-            src="/naked-sensor.png"
+            src="/new-sensor.avif"
             alt="EndoBio sensor buried beside soybean roots in the root zone."
             className="absolute inset-0 h-full w-full object-cover"
           />
-          <div className="pointer-events-none absolute inset-y-0 left-0 w-24 bg-gradient-to-r from-[#f5f5f7] to-transparent" />
-          <div className="pointer-events-none absolute inset-y-0 right-0 w-24 bg-gradient-to-l from-[#f5f5f7] to-transparent" />
-          <div className="pointer-events-none absolute inset-x-0 bottom-0 h-24 bg-gradient-to-t from-[#f5f5f7] to-transparent" />
+          <div className="pointer-events-none absolute inset-y-0 left-0 w-14 bg-gradient-to-r from-[#f5f5f7]/65 to-transparent" />
+          <div className="pointer-events-none absolute inset-y-0 right-0 w-14 bg-gradient-to-l from-[#f5f5f7]/45 to-transparent" />
+          <div className="pointer-events-none absolute inset-x-0 bottom-0 h-16 bg-gradient-to-t from-[#f5f5f7]/55 to-transparent" />
         </div>
       </div>
     </section>

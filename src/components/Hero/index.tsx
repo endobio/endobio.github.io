@@ -4,7 +4,7 @@ export default function Hero() {
   return (
     <section className="relative isolate overflow-hidden bg-white pt-14 text-[#071018]">
       <img
-        src="/new-hero.png"
+        src="/new-hero.avif"
         alt=""
         aria-hidden="true"
         className="absolute inset-0 -z-30 h-full w-full object-contain object-bottom sm:object-cover sm:object-center"

@@ -208,7 +208,7 @@ export default function ProductShowcase() {
               'AI-guided sensor target selection — designed from biology up',
               'Literature mining across agricultural and molecular biology research',
             ]}
-            imageSrc="/screenshots/discover.png"
+            imageSrc="/screenshots/discover.avif"
             imageAlt="EndoBio Discovery — Configure sensor suite and identify regional risks"
           />
 
@@ -224,7 +224,7 @@ export default function ProductShowcase() {
               'Adaptive sampling based on environmental and biological context',
               'Lead time of weeks, not days — earlier than any visual monitoring',
             ]}
-            imageSrc="/screenshots/detect.png"
+            imageSrc="/screenshots/detect.avif"
             imageAlt="EndoBio Detection — SCN monitoring field heatmap with sensor grid"
             reverse
           />
@@ -241,7 +241,7 @@ export default function ProductShowcase() {
               'Integration with existing farm management systems',
               'Outcome monitoring to close the feedback loop',
             ]}
-            imageSrc="/screenshots/respond.png"
+            imageSrc="/screenshots/respond.avif"
             imageAlt="EndoBio Response — Mitigation plan with confirm, treat, and prevent workflow"
           />
 
