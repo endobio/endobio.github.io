@@ -6,9 +6,9 @@ const callouts = [
 
 export default function SensorSection() {
   return (
-    <section className="overflow-hidden bg-white py-24 sm:py-32">
-      <div className="mx-auto grid max-w-7xl items-center gap-12 px-6 lg:grid-cols-2 lg:gap-16 lg:px-8">
-        <div>
+    <section className="overflow-visible bg-white pb-24 pt-10 sm:pb-32 sm:pt-14">
+      <div className="mx-auto grid max-w-7xl items-start gap-10 px-6 lg:grid-cols-2 lg:gap-16 lg:px-8">
+        <div className="order-2 lg:order-1 lg:pt-14">
           <p className="mb-4 text-xs font-semibold uppercase tracking-widest text-[#4caf50]">
             Root-zone sensing
           </p>
@@ -31,7 +31,7 @@ export default function SensorSection() {
           </div>
         </div>
 
-        <div className="border-x border-[#eeeeee] bg-white">
+        <div className="order-1 -mt-24 border-x border-[#eeeeee] bg-white sm:-mt-32 lg:order-2 lg:-mt-40">
           <img
             src="/new-sensor.avif"
             alt="EndoBio sensor buried beside soybean roots in the root zone."

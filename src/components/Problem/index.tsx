@@ -1,6 +1,6 @@
 export default function DetectionWindow() {
   return (
-    <div id="detection" className="py-24 sm:py-32 bg-white">
+    <div id="detection" className="bg-white pb-12 pt-24 sm:pb-16 sm:pt-32">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-3xl">
           <p className="text-xs font-semibold uppercase tracking-widest mb-4 text-[#4caf50]">
