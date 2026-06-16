@@ -59,9 +59,14 @@ npm run lint
 - **Vite** - Build tool and dev server
 - **TailwindCSS** - Utility-first CSS
 - **React Router** - Client-side routing
-- **PostHog** - Product analytics
 - **Headless UI** - Unstyled, accessible components
 - **Hero Icons** - Icon set
+
+## Analytics
+
+- **Microsoft Clarity** - Session recording and heatmaps
+- **Google Analytics** - Traffic and user behavior tracking
+- **PostHog** - Product analytics and feature tracking
 
 ## License
 
