@@ -1,3 +1,9 @@
+<<<<<<< ours
+<<<<<<< ours
+<<<<<<< ours
+<<<<<<< ours
+<<<<<<< ours
+<<<<<<< ours
 # Logs
 logs
 *.log
@@ -23,3 +29,37 @@ dist-ssr
 *.sln
 *.sw?
 .env
+=======
+=======
+>>>>>>> theirs
+=======
+>>>>>>> theirs
+=======
+>>>>>>> theirs
+=======
+>>>>>>> theirs
+=======
+>>>>>>> theirs
+__pycache__/
+*.py[cod]
+cpn_crop_lookout_raw/
+cpn_crop_lookout_all_raw.json
+cpn_crop_lookout_normalized.csv
+cpn_crop_lookout_normalized.parquet
+page_1.json
+<<<<<<< ours
+<<<<<<< ours
+<<<<<<< ours
+<<<<<<< ours
+<<<<<<< ours
+>>>>>>> theirs
+=======
+>>>>>>> theirs
+=======
+>>>>>>> theirs
+=======
+>>>>>>> theirs
+=======
+>>>>>>> theirs
+=======
+>>>>>>> theirs

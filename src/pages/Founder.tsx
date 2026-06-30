@@ -72,7 +72,7 @@ export default function Founder() {
               </div>
 
               {/* Credentials pills */}
-              <div className="flex flex-wrap gap-2 justify-center lg:justify-start">
+              <div className="flex w-full max-w-[280px] flex-wrap gap-2 justify-center lg:max-w-none lg:justify-start">
                 {credentials.map((c) => (
                   <span
                     key={c}
