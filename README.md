@@ -1,111 +1,51 @@
-<<<<<<< ours
-<<<<<<< ours
-<<<<<<< ours
-<<<<<<< ours
-<<<<<<< ours
-<<<<<<< ours
-# endobio-ai
+# EndoBio
 
-A modern React + TypeScript web application built with Vite, TailwindCSS, and PostHog analytics.
+EndoBio's public website and supporting Crop Protection Network data-ingestion utilities.
 
-## Prerequisites
+## Web application
 
-- Node.js (v18 or higher recommended)
+The site is built with React, TypeScript, Vite, Tailwind CSS, React Router, and PostHog.
+
+### Prerequisites
+
+- Node.js 18 or newer
 - npm
 
-## Installation
-
-1. Clone the repository
-2. Install dependencies:
+### Setup
 
 ```bash
 npm install
 ```
 
-## Development
-
-Start the development server with hot module reloading:
+Start the development server:
 
 ```bash
 npm run dev
 ```
 
-The application will be available at `http://localhost:5173` by default.
-
-## Build
-
-Build the application for production:
+Create and preview a production build:
 
 ```bash
 npm run build
-```
-
-This runs TypeScript checks and builds the project with Vite.
-
-## Preview
-
-Preview the production build locally:
-
-```bash
 npm run preview
 ```
 
-## Linting
-
-Check code quality with ESLint:
+Run the code-quality checks:
 
 ```bash
 npm run lint
 ```
 
-## Tech Stack
+## CPN Crop Lookout ingestion
 
-- **React 19** - UI library
-- **TypeScript** - Type safety
-- **Vite** - Build tool and dev server
-- **TailwindCSS** - Utility-first CSS
-- **React Router** - Client-side routing
-- **Headless UI** - Unstyled, accessible components
-- **Hero Icons** - Icon set
+The repository includes a reproducible pipeline for the Crop Protection Network Crop Lookout archive API.
 
-## Analytics
-
-- **Microsoft Clarity** - Session recording and heatmaps
-- **Google Analytics** - Traffic and user behavior tracking
-- **PostHog** - Product analytics and feature tracking
-
-## License
-
-MIT
-=======
-=======
->>>>>>> theirs
-=======
->>>>>>> theirs
-=======
->>>>>>> theirs
-=======
->>>>>>> theirs
-=======
->>>>>>> theirs
-# CPN Crop Lookout ingestion
-
-This repository contains a reproducible scraping pipeline for the Crop Protection Network Crop Lookout archive API.
-
-## Pipeline
-
-1. Fetch raw paginated API responses into `cpn_crop_lookout_raw/page_XXXXX.json`.
-2. Combine extracted raw records into `cpn_crop_lookout_all_raw.json`.
+1. Fetch paginated API responses into `cpn_crop_lookout_raw/page_XXXXX.json`.
+2. Combine extracted records into `cpn_crop_lookout_all_raw.json`.
 3. Normalize records into `cpn_crop_lookout_normalized.csv` and `cpn_crop_lookout_normalized.parquet`.
-4. Inspect raw-key coverage before locking any downstream schema.
+4. Inspect raw-key coverage before locking a downstream schema.
 
-## Usage
-
-<<<<<<< ours
-Install dependencies:
-=======
-Install normalization dependencies (the scraper itself uses only the Python standard library):
->>>>>>> theirs
+Install the normalization dependencies. The scraper itself uses only the Python standard library.
 
 ```bash
 python3 -m pip install -r requirements.txt
@@ -124,11 +64,7 @@ python3 -m json.tool page_1.json | less
 Run a short scraper test:
 
 ```bash
-<<<<<<< ours
-python3 scrape_cpn_crop_lookout.py --max-pages 1
-=======
 python3 scrape_cpn_crop_lookout.py --max-pages 1 --sleep-seconds 0
->>>>>>> theirs
 ```
 
 Run the full scrape:
@@ -149,18 +85,13 @@ Inspect fields across raw records:
 python3 inspect_cpn_crop_lookout_keys.py
 ```
 
-<<<<<<< ours
-=======
-## Tests
-
 Run the scraper unit tests without third-party dependencies:
 
 ```bash
 python3 -m unittest discover -s tests -v
 ```
 
->>>>>>> theirs
-## Suggested DuckDB checks
+### Suggested DuckDB checks
 
 ```sql
 SELECT
@@ -187,19 +118,11 @@ FROM 'cpn_crop_lookout_normalized.parquet'
 WHERE observation_date >= CURRENT_DATE - INTERVAL 30 DAY
 ORDER BY observation_date DESC;
 ```
-<<<<<<< ours
-<<<<<<< ours
-<<<<<<< ours
-<<<<<<< ours
-<<<<<<< ours
->>>>>>> theirs
-=======
->>>>>>> theirs
-=======
->>>>>>> theirs
-=======
->>>>>>> theirs
-=======
->>>>>>> theirs
-=======
->>>>>>> theirs
+
+## Analytics
+
+The site includes Microsoft Clarity, Google Analytics, and PostHog integrations.
+
+## License
+
+MIT
