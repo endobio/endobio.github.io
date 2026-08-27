@@ -3,8 +3,8 @@ export default function TechDevelopment() {
     'Agricultural disease intelligence platform',
     'Knowledge graph infrastructure',
     'Biomarker discovery workflows',
-    'Molecular sensing systems',
-    'Root-zone sampling hardware',
+    'Molecular sensing prototype',
+    'Root-zone sampling architecture',
     'Adaptive sensor network architecture',
   ]
 
