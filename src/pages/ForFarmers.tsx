@@ -207,7 +207,7 @@ export default function ForFarmers() {
                 <div className="h-3 w-3 rounded-full bg-gray-300" />
                 <div className="h-3 w-3 rounded-full bg-gray-300" />
                 <div className="h-3 w-3 rounded-full bg-gray-300" />
-                <span className="text-xs text-gray-400 ml-2 font-mono">endobio · Field Zone A3 · Waterloo, ON</span>
+                <span className="text-xs text-gray-400 ml-2 font-mono">endobio · Field Zone A3 · Toronto, ON</span>
               </div>
 
               {/* Tab row */}

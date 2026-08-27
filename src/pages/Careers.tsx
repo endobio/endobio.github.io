@@ -76,7 +76,7 @@ export default function Careers() {
           <div className="max-w-4xl">
             <div className="mb-7 inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/5 px-3.5 py-1.5 text-xs font-medium text-emerald-100 backdrop-blur-sm">
               <MapPinIcon className="h-4 w-4 text-[#6abf6e]" />
-              Waterloo, Ontario · Pre-seed
+              Toronto, Ontario · Pre-seed
             </div>
             <Eyebrow light>Careers at EndoBio</Eyebrow>
             <Heading as="h1" size="2xl" light className="max-w-4xl">

@@ -20,7 +20,7 @@ export default function Footer() {
               Biological intelligence platform for field-scale crop disease detection.
             </p>
             <p className="text-xs text-gray-600 mt-3">
-              Pre-Seed · Waterloo, Ontario
+              Pre-Seed · Toronto, Ontario
             </p>
           </div>
 
@@ -92,7 +92,7 @@ export default function Footer() {
                 <span className="text-sm text-gray-600">Pre-Seed Stage</span>
               </li>
               <li>
-                <span className="text-sm text-gray-600">Waterloo, Ontario</span>
+                <span className="text-sm text-gray-600">Toronto, Ontario</span>
               </li>
               <li>
                 <a
