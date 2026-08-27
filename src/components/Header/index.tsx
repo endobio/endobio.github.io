@@ -1,6 +1,7 @@
 'use client'
 
 import { useEffect, useState, type MouseEvent } from 'react'
+import { useLocation } from 'react-router-dom'
 import posthog from '../../lib/posthog'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 import { authActions, logo, mainNavItems, primaryActions } from './config'
@@ -9,6 +10,7 @@ const pendingSectionKey = 'endobio-pending-section'
 
 export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
+  const location = useLocation()
 
   const links = mainNavItems.filter((item) => item.type === 'link' && item.href)
 
@@ -46,14 +48,22 @@ export default function Header() {
   }
 
   useEffect(() => {
+    if (location.pathname !== '/') return
+
     const pendingSection = sessionStorage.getItem(pendingSectionKey)
     if (!pendingSection) return
 
     sessionStorage.removeItem(pendingSectionKey)
-    window.setTimeout(() => {
-      scrollToSection(`#${pendingSection}`)
+    const timeoutId = window.setTimeout(() => {
+      const el = document.getElementById(pendingSection)
+      if (!el) return
+
+      const top = el.getBoundingClientRect().top + window.scrollY - 64
+      window.scrollTo({ top, behavior: 'smooth' })
     }, 0)
-  }, [])
+
+    return () => window.clearTimeout(timeoutId)
+  }, [location.pathname])
 
   return (
     <header className="fixed inset-x-0 top-0 z-50 border-b border-black/5 bg-white/75 backdrop-blur-xl">
