@@ -18,6 +18,7 @@ import ProductShowcase from './components/ProductShowcase';
 import ForFarmers from './pages/ForFarmers';
 import ForInvestors from './pages/ForInvestors';
 import Founder from './pages/Founder';
+import Careers from './pages/Careers';
 
 const HomePage = () => (
   <main>
@@ -46,6 +47,7 @@ const App = () => {
         <Route path="/farmers" element={<ForFarmers />} />
         <Route path="/investors" element={<ForInvestors />} />
         <Route path="/founder" element={<Founder />} />
+        <Route path="/careers" element={<Careers />} />
       </Routes>
       <Footer />
     </Router>

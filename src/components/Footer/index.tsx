@@ -35,6 +35,7 @@ export default function Footer() {
                 { label: 'For Farmers', href: '/#/farmers' },
                 { label: 'For Investors', href: '/#/investors' },
                 { label: 'About the Founder', href: '/#/founder' },
+                { label: 'Careers', href: '/#/careers' },
               ].map((link) => (
                 <li key={link.label}>
                   <a
